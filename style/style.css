@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    /* Основной цвет */
+    --main: #58B80C;
+    --main-text: white;
+    --h2-size: 40px;
+    --h2-c: black;
+    --btn-c: white;
+    /* Размер текста h4 */
+    --h4-c: black;
+    --form-bg: #EDEDED;
+    /* Цвет выделения текста в форме */
+    --select-text: #58B80C;
+    --form-btn: #58B80C;
+    /* Цвет текста кнопок формы */
+    --form-btn-txt: white;
+    /* Задний фон карт */
+    --card-bg: #FFFEFE;
+    /* Маркеры списков */
+    --li: #58B80C;
+}
+
+body {
+    font-family: Montserrat;
+    font-weight: 400;
+    line-height: auto;
+    font-size: 20px;
+}
+
+body h2 {
+    font-size: var(--h2-size);
+    color: var(--h2-c);
+    line-height: 70px;
+    font-size: 40px;
+}
+
+#main-wrapper {
+    padding-top: 83px;
+    width: 1440px;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+}
+
+#container {
+    width: 1210px;
+    margin: 0 auto;
+}
+
+/* Хедер */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    width: 315px;
+    height: 74px;
+}
+
+header ul {
+    display: flex;
+    width: 477px;
+    justify-content: space-between;
+}
+
+header div {
+    font-size: 20px;
+}
+
+#header-login {
+    width: 243px;
+    height: 68px;
+    display: flex;
+    flex-direction: column;
+    line-height: 24px;
+    align-items: center;
+    border: 1px solid black;
+    justify-content: center;
+}
+
+/* Блок Мобильное приложение */
+#mobile-app {
+    margin-top: 99px;
+    position: relative;
+    height: 582px;
+}
+
+#mobile-app img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    box-shadow: 3px 4px 5px 5px rgba(34, 60, 80, 0.2);
+}
+
+#mobile-app-block {
+    margin-top: 159px;
+    margin-top: 15px;
+}
+
+/* Тень заголовков */
+#mobile-app h1,
+#mobile-app h2 {
+    text-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+}
+
+h1,
+h2 {
+    font-size: 80px;
+    font-weight: 600;
+    line-height: 70px;
+}
+
+#mobile-app h2,
+#fees-size {
+    width: 747px;
+    font-size: 66px;
+    color: var(--main);
+}
+
+#mobile-app-block__subtitle {
+    margin-top: 30px;
+    max-width: 653px;
+    width: 100%;
+    margin-bottom: 54px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+/* Блок автоматизация  */
+#automation {
+    margin-top: 159px;
+}
+
+#automation h3 {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--main);
+    padding: 19px 34px;
+    color: var(--btn-c);
+}
+
+.item {
+    width: 294px;
+}
+
+.item h4 {
+    margin-top: 20px;
+    font-size: var(--h4-s);
+    font-weight: bold;
+    color: var(--h4-c);
+}
+
+#card-wrapper {
+    margin-top: 27px;
+    justify-content: space-between;
+    display: flex;
+}
+
+#card-wrapper img {
+    height: 250px;
+}
+
+.item p {
+    margin-top: 13px;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+/* Стилизация форм */
+form {
+    padding-top: 32px;
+    width: 1200px;
+    height: 638px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 169px;
+    background: var(--form-bg);
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form h2 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 70px;
+}
+
+form h3 {
+    margin-top: 38px;
+}
+
+form input {
+    font-size: 20px;
+    font-family: inherit;
+    border: none;
+    background: var(--form-bg);
+    border-bottom: 1px solid black;
+    width: 264px;
+}
+
+form input:focus {
+    outline: none;
+    background: var(--form-bg);
+    border-bottom: 1px solid black;
+
+}
+
+form p {
+    width: 653px;
+}
+
+.form-footer {
+    margin-top: 80px;
+    max-width: 1007px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-footer p {
+    font-size: 18px;
+    width: 653px;
+    line-height: 30px;
+}
+
+.inp-items {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    width: 1007px;
+}
+
+.inp-item {
+    max-width: 264px;
+    display: inline-block;
+}
+
+.selection-txt {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+form a {
+    color: var(--select-text);
+    cursor: pointer;
+}
+
+form button {
+    color: var(--form-btn-txt);
+    border: none;
+    width: 285px;
+    height: 60px;
+    display: inline-block;
+    background: var(--form-btn);
+    font-family: inherit;
+    font-size: 20px;
+}
+
+/* Тень для всех кнопок при наведении */
+button.b-Shadow:hover,
+.btn.b-Shadow:hover {
+    cursor: pointer;
+    transition: ease-in-out;
+    transition-duration: .3s;
+    box-shadow: 0px 4px 60px rgba(0, 0, 0, .25);
+}
+
+/* Блок база знаний */
+#knowledge-base {
+    height: 546px;
+    position: relative;
+    margin-top: 139px;
+    box-sizing: border-box;
+}
+
+#knowledge-base img {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+#knowledge-base p {
+    margin: 50px 0 82px 0;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 45px;
+    max-width: 712px;
+}
+
+#card-container__items {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Блог с тарифами */
+#tariffs {
+    margin-top: 135px;
+}
+
+#tariffs hgroup h2,
+#tariffs hgroup h3 {
+    text-align: center;
+}
+
+#tariffs h2 {
+    line-height: 70px;
+}
+
+#card-container__items {
+    margin-top: 101px;
+}
+
+.card-container__item {
+    box-shadow: 10px 10px 10px 10px rgba(177, 176, 169, 1);
+    background: var(--card-bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 542px;
+    height: 371px;
+}
+
+.card-container__item span {
+    margin-top: 24px;
+    font-size: 18px;
+    border-bottom: 1px solid black;
+}
+
+.card-container__item h3 {
+    margin-top: 30px;
+}
+
+.big-text {
+    font-weight: 600;
+    line-height: 70px;
+    font-size: 64px;
+    color: #58B80C;
+}
+
+.card-description {
+    line-height: 30px;
+    margin-top: 61px;
+    width: 380px;
+}
+
+#tariffs #h3-include {
+    margin-top: 93px;
+    margin-bottom: 52px;
+}
+
+#tariffs li {
+    font-size: 20px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, .25);
+    line-height: 27px;
+    margin-bottom: 27px;
+}
+
+#tariffs li::before {
+    content: "";
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    border-radius: 50%;
+    background: var(--li);
+    margin-right: 16px;
+}
+
+/* Футер */
+footer {
+    margin-top: 149px;
+    padding-bottom: 44px;
+}
+
+address {
+    display: flex;
+    justify-content: space-between;
+}
+
+address p {
+    text-align: center;
+}
+
+address p:nth-child(1) {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 70px;
+}
+
+address p:nth-child(2) {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+small {
+    text-align: end;
+    display: block;
+    margin-top: 72px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 34px;
+}
