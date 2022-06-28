@@ -93,7 +93,10 @@ header div {
     bottom: 0;
     box-shadow: 3px 4px 5px 5px rgba(34, 60, 80, 0.2);
 }
-
+#mobile-app a {
+    color: inherit;
+    font-size: inherit;
+}
 #mobile-app-block {
     margin-top: 159px;
     margin-top: 15px;
@@ -174,7 +177,9 @@ h2 {
 
 /* Стилизация форм */
 form {
+    /* box-sizing: border-box; */
     padding-top: 32px;
+    /* padding-bottom: 59px; */
     width: 1200px;
     height: 638px;
     margin: 0 auto;
