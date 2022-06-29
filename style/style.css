@@ -36,19 +36,24 @@ html {
 }
 
 body {
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
     font-family: Montserrat;
     font-weight: 400;
     line-height: auto;
     font-size: 20px;
+
 }
 
 body h2 {
     font-size: var(--h2-size);
     color: var(--h2-c);
-    line-height: 70px;
     font-size: 40px;
 }
-
+header h1, header h2 {
+    line-height: 70px;
+}
 #main-wrapper {
     padding-top: 83px;
     width: 100%;
@@ -57,29 +62,71 @@ body h2 {
 }
 
 #container {
-    width: 1210px;
+    /* width: 1210px; */
     width: 90%;
     margin: 0 auto;
 }
 
 /* Хедер */
 header {
+    /* flex-wrap: wrap; */
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+header>div {
+    max-width: 1015px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+img {
+    width: 100%;
+}
+
 header img {
-    width: 315px;
+    max-width: 315px;
     height: 74px;
+}
+
+header nav {
+    max-width: 477px;
+    width: 100%;
+    /* width: 100%; */
 }
 
 header ul {
     display: flex;
-    width: 477px;
     justify-content: space-between;
+    width: 100%;
+}
+header li {
+    position: relative;
+	color: #00a650; /*задаём цвет ссылки*/
+	cursor: pointer;
+	line-height: 1; /*задаём высоту строки*/
+	text-decoration: none; /*убираем подчёркивание*/
+}
+header li:after {
+    margin-top: 5px;
+	display: block;
+	position: absolute;
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 2px; /*задаём ширину линии*/
+	background-color: #00a650; /*задаём цвет линии*/
+	content: "";
+	transition: width 0.3s ease-out; /*задаём время анимации*/
 }
 
+header li:hover:after,
+header li:focus:after {
+	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
 header div {
     font-size: 20px;
 }
@@ -98,15 +145,19 @@ header div {
 /* Блок Мобильное приложение */
 #mobile-app {
     margin-top: 99px;
-    position: relative;
-    height: 582px;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-between;
 }
 
 #mobile-app img {
-    position: absolute;
+    /* position: absolute; */
     right: 0;
     bottom: 0;
     box-shadow: 3px 4px 5px 5px rgba(34, 60, 80, 0.2);
+    max-width: 452px;
+    height: 436px;
+    margin-top: 146px;
 }
 
 #mobile-app a {
@@ -129,12 +180,11 @@ header div {
 h1,
 h2 {
     font-size: 80px;
-    line-height: 70px;
 }
-
 #mobile-app h2,
 #fees-size {
-    width: 747px;
+    max-width: 747px;
+    width: 100%;
     font-size: 66px;
     color: var(--main);
 }
@@ -152,8 +202,8 @@ h2 {
 #automation {
     margin-top: 159px;
 }
-
 #automation h3 {
+    margin-top: 40px;
     font-size: 24px;
     font-weight: 300;
 }
@@ -180,6 +230,10 @@ h2 {
     margin-top: 27px;
     justify-content: space-between;
     display: flex;
+    flex-wrap: wrap;
+}
+#card-wrapper div:nth-child(2), #card-wrapper div:nth-child(3) {
+margin-left: 20px;
 }
 
 #card-wrapper img {
@@ -194,11 +248,12 @@ h2 {
 
 /* Стилизация форм */
 form {
-    /* box-sizing: border-box; */
-    padding-top: 32px;
+    box-sizing: border-box;
+    padding: 62px 85px 85px 59px;
     /* padding-bottom: 59px; */
-    width: 1200px;
-    height: 638px;
+    max-width: 1200px;
+    width: 100%;
+    /* height: 638px; */
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -208,9 +263,11 @@ form {
 }
 
 h3 {
+    text-align: center;
     font-weight: 700;
     font-size: 24px;
     margin-bottom: 20px;
+
 }
 
 form h2 {
@@ -221,7 +278,11 @@ form h2 {
 }
 
 form h3 {
-    margin-top: 38px;
+    line-height: 40px;
+}
+
+.inp-item {
+    max-width: 264px;
 }
 
 form input {
@@ -230,49 +291,18 @@ form input {
     border: none;
     background: var(--form-bg);
     border-bottom: 1px solid black;
-    width: 264px;
+    width: 100%;
 }
 
 form input:focus {
     outline: none;
     background: var(--form-bg);
     border-bottom: 1px solid black;
-
 }
 
 form p {
-    width: 653px;
-}
-
-.form-footer {
-    margin-top: 80px;
-    max-width: 1007px;
+    max-width: 653px;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.form-footer p {
-    font-size: 18px;
-    width: 653px;
-    line-height: 30px;
-}
-
-.inp-items {
-    margin-top: 80px;
-    display: flex;
-    justify-content: space-between;
-    width: 1007px;
-}
-
-.inp-item {
-    max-width: 264px;
-    display: inline-block;
-}
-
-.selection-txt {
-    font-weight: 400;
-    font-size: 18px;
 }
 
 form a {
@@ -291,6 +321,41 @@ form button {
     font-size: 20px;
 }
 
+.form-footer {
+    margin-top: 80px;
+    max-width: 1007px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-footer p {
+    font-size: 18px;
+    width: 653px;
+    line-height: 30px;
+
+}
+
+.inp-items {
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1007px;
+    width: 100%;
+}
+
+
+
+.selection-txt {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+
+
 /* Тень для всех кнопок при наведении */
 button.b-Shadow:hover,
 .btn.b-Shadow:hover {
@@ -302,14 +367,17 @@ button.b-Shadow:hover,
 
 /* Блок база знаний */
 #knowledge-base {
-    height: 546px;
-    position: relative;
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* height: 546px; */
+    /* position: relative; */
     margin-top: 139px;
     box-sizing: border-box;
+    justify-content: space-between;
 }
 
 #knowledge-base img {
-    position: absolute;
+    /* position: absolute; */
     right: 0px;
     bottom: 0px;
 }
@@ -322,10 +390,7 @@ button.b-Shadow:hover,
     max-width: 712px;
 }
 
-#card-container__items {
-    display: flex;
-    justify-content: space-between;
-}
+
 
 /* Блог с тарифами */
 #tariffs {
@@ -343,6 +408,16 @@ button.b-Shadow:hover,
 
 #card-container__items {
     margin-top: 101px;
+}
+
+#card-container__items {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-around;
+}
+
+#card-container__items div:nth-child(2) {
+    margin-left: 30px;
 }
 
 .card-container__item {
@@ -408,6 +483,7 @@ footer {
 
 address {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -435,3 +511,148 @@ small {
     font-size: 18px;
     line-height: 34px;
 }
+
+/* Медиа запросы */
+:root {
+    --head-img: 54px;
+    --form-el-mt: 30px
+}
+
+/* @media screen and (max-width: 1678px) {} */
+
+@media screen and (max-width: 1200px) {
+    header{
+        gap: 15px;
+    }
+    #card-container__items {
+        flex-wrap: wrap;
+    }
+
+    #card-container__items {
+        margin: 0 auto;
+        margin-top: 101px;
+    }
+
+    #card-container__items div:nth-child(2) {
+        margin-top: 70px;
+        margin-left: 0px;
+    }
+
+    form button {
+        margin-top: var(--form-el-mt);
+    }
+}
+
+@media screen and (max-width: 1160px) {
+    header {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    header a {
+        margin: 0 auto;
+    }
+
+    header nav,
+    header a {
+        margin-top: 30px;
+    }
+
+    #mobile-app {
+        flex-wrap: wrap;
+    }
+
+    #mobile-app img {
+        margin-top: var(--head-img);
+    }
+    .inp-items {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .inp-items .inp-item {
+        margin-top: 30px;
+    }
+
+    .inp-item {
+        min-width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 960px) {
+    #knowledge-base {
+        flex-wrap: wrap;
+    }
+
+    form {
+        padding: 30px;
+    }
+
+    address {
+        flex-direction: column;
+    }
+
+    footer h2 {
+        text-align: center;
+    }
+
+    .inp-items .inp-item:nth-child(3) {
+        margin-top: var(--form-el-mt);
+        min-width: 100%;
+    }
+
+    .inp-items .inp-item:nth-child(3) input {
+        min-width: 100%;
+    }
+}
+
+@media screen and (max-width: 878px) {
+    header{
+        flex-direction: column;
+        justify-content: center;
+    }
+header img {
+    margin:  0 auto;
+}
+}
+
+@media screen and (max-width: 760px) {
+    .inp-items .inp-item {
+        min-width: 100%;
+        margin-top: var(--form-el-mt);
+    }
+
+    .inp-items .inp-item input {
+        min-width: 100%;
+    }
+
+    .inp-items {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    #card-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    header {
+        display: flex;
+        align-items: center;
+    }
+
+    header ul {
+        margin-top: 0px;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 360px) {}
