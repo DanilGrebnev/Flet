@@ -51,13 +51,14 @@ body h2 {
 
 #main-wrapper {
     padding-top: 83px;
-    width: 1440px;
+    width: 100%;
     margin: 0 auto;
     /* border: 1px solid black; */
 }
 
 #container {
     width: 1210px;
+    width: 90%;
     margin: 0 auto;
 }
 
