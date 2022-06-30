@@ -22,7 +22,7 @@ document.addEventListener('click', e => {
             redirect: 'follow'
         };
 
-        fetch("http://192.168.1.38:3050/fb", requestOptions)
+        fetch("https://market-api.flet.su/", requestOptions)
             .then(res => res.json())
             .then(r => {
                 console.log(r)
