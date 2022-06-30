@@ -76,32 +76,24 @@ header {
 }
 
 
+
 a.glo {
-    color: black;
-    padding: 12px;
-    width: 243px;
-    text-decoration: none;
-    text-align: center;
-    margin: 30px 0;
-    display: block;
-    background-image: linear-gradient(to left, transparent, transparent 50%, var(--main) 50%, var(--main));
-    background-position: 100% 0;
-    background-size: 200% 100%;
-    transition: all .3s ease-in;
-    font-family: Montserrat;
-    font-size: 20px;
     border: 1px solid black;
+    transition: all .3s ease-in;
+    display: flex;
+    /* width: 243px; */
+    padding: 12px;
+    /* height: 68px; */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 a.glo:hover {
-    transition-property: ;
+    box-shadow: 0px 4px 60px rgba(0, 0, 0, .25);
     border-color: var(--main);
-    background-position: 0 0;
-    color: #fff;
-}
+    background: var(--main);
 
-a.glo div {
-    transition: all .3s ease-in;
 }
 
 a.glo:hover div {
@@ -201,9 +193,8 @@ header div {
     /* position: absolute; */
     right: 0;
     bottom: 0;
-    box-shadow: 3px 4px 5px 5px rgba(34, 60, 80, 0.2);
-    max-width: 452px;
-    height: 436px;
+    max-width: 675px;
+    height: 629px;
     margin-top: 146px;
 }
 
@@ -220,7 +211,6 @@ header div {
 /* Тень заголовков */
 #mobile-app h1,
 #mobile-app h2 {
-    text-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
     font-weight: 600;
 }
 
@@ -285,7 +275,7 @@ h2 {
 
 #card-wrapper div:nth-child(2),
 #card-wrapper div:nth-child(3) {
-    margin-left: 20px;
+    margin-left: 40px;
 }
 
 #card-wrapper img {
@@ -355,6 +345,7 @@ form input:focus {
 form p {
     max-width: 653px;
     width: 100%;
+    margin-bottom: 30px;
 }
 
 form a {
@@ -399,21 +390,23 @@ form button {
     width: 100%;
 }
 
-
-
 .selection-txt {
     font-weight: 400;
     font-size: 18px;
 }
-
-
 
 /* Тень для всех кнопок при наведении */
 button.b-Shadow:hover,
 .btn.b-Shadow:hover {
     cursor: pointer;
     transition: ease-in-out;
-    transition-duration: .3s;
+    transition: .3s;
+    box-shadow: 0px 4px 60px rgba(0, 0, 0, .1);
+
+}
+
+button.b-Shadow,
+.btn.b-Shadow {
     box-shadow: 0px 4px 60px rgba(0, 0, 0, .25);
 }
 
@@ -472,7 +465,7 @@ button.b-Shadow:hover,
 }
 
 #card-container__items div:nth-child(2) {
-    margin-left: 30px;
+    margin-left: 60px;
 }
 
 .card-container__item {
@@ -481,7 +474,7 @@ button.b-Shadow:hover,
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 796px;
+    max-width: 690px;
     width: 100%;
     padding-bottom: 70px;
 }
@@ -576,10 +569,39 @@ small {
 }
 
 /* @media screen and (max-width: 1678px) {} */
+@media screen and (max-width: 1400px) {
+
+
+    #mobile-app img {
+        width: 450px;
+        height: 450px;
+        margin-top: 70px;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    form .form-footer p {
+        min-width: 100%;
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 1202px) {
+    form .form-footer p {
+        min-width: 100%;
+    }
+}
 
 @media screen and (max-width: 1200px) {
     header {
         gap: 15px;
+    }
+
+    #mobile-app {
+        flex-direction: column;
+    }
+    #mobile-app img {
+        margin: 60px auto 0px auto;
     }
 
     #card-container__items {
@@ -598,6 +620,21 @@ small {
 
     form button {
         margin-top: var(--form-el-mt);
+    }
+
+    #knowledge-base {
+        flex-direction: column;
+    }
+
+    #knowledge-base img {
+        margin: 0 auto;
+        margin-top: 60px;
+        width: 450px;
+        height: 450px;
+    }
+    #knowledge-base p {
+        max-width: none;
+        text-align: justify;
     }
 }
 
@@ -639,21 +676,60 @@ small {
 
 }
 
+@media screen and (max-width: 1100px) {
+    #card-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #automation h2,
+    #automation h3,
+    #automation h4 {
+        text-align: center;
+    }
+
+    #automation img {
+        margin-top: 30px;
+    }
+
+    #card-wrapper .item {
+        width: 100%;
+    }
+
+    #card-wrapper p {
+        width: 100%;
+    }
+    footer h2 {
+        text-align: center;
+    }
+    address {
+        flex-direction: column;
+
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #card-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 @media screen and (max-width: 960px) {
     #knowledge-base {
         flex-wrap: wrap;
-    }
-
-    form {
-        padding: 30px;
     }
 
     address {
         flex-direction: column;
     }
 
-    footer h2 {
-        text-align: center;
+    form {
+        padding-left: 30px;
+    }
+
+    form {
+        padding-right: 30px;
     }
 
     .inp-items .inp-item:nth-child(3) {
@@ -664,9 +740,7 @@ small {
     .inp-items .inp-item:nth-child(3) input {
         min-width: 100%;
     }
-}
 
-@media screen and (max-width: 878px) {
     header {
         flex-direction: column;
         justify-content: center;
@@ -675,7 +749,47 @@ small {
     header img {
         margin: 0 auto;
     }
+
+    #mobile-app h1,
+    #mobile-app-block h2 {
+        text-align: center;
+    }
+
+    #mobile-app img {
+        margin: 70px auto;
+    }
+
+    #mobile-app-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #mobile-app-block__subtitle {
+        max-width: 100%;
+    }
+
+    #automation {
+        margin-top: 50px;
+    }
+
+    #automation hgroup h3,
+    #automation hgroup h2 {
+        display: block;
+        text-align: center;
+    }
+
+    #card-wrapper {
+        justify-content: space-around;
+    }
+
+    form {
+        margin-top: 50px;
+    }
+
+
 }
+
 
 @media screen and (max-width: 760px) {
     .inp-items .inp-item {
@@ -770,5 +884,3 @@ small {
         gap: 20px;
     }
 }
-
-@media screen and (max-width: 360px) {}
