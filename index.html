@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
     <!-- шрифт -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,6 +27,9 @@
     <main id="main-wrapper">
         <main id="container">
             <header>
+                <div id="burger">
+                    <span></span>
+                </div>
                 <img src="img/header-logo.svg" alt="Логотип">
                 <nav>
                     <ul>
@@ -43,22 +46,29 @@
                 </a>
             </header>
             <section id="mobile-app">
-                <div>
-                    <h1>Мобильное приложение</h1>
+
+                <h1>Мобильное приложение</h1>
+                <div id="sub-mobile">
                     <div id="mobile-app-block">
-                        <h2>для бизнеса любого размера за <span id="fees-size">1800</span> руб.</h2>
+                        <h2>для бизнеса любого размера за 0 руб./мес</h2>
                         <p id="mobile-app-block__subtitle">
                             Ваше мобильное приложе&shy;ние
                             для магазина, ресторана, кафе, булочной. Вообще для любого бизнеса
                         </p>
-                        <span class="btn b-Shadow">
+                        <span id="btn-on-img" class="btn b-Shadow">
                             <a href="https://www.market.flet.su/">
                                 Зарегистрироваться
                             </a>
                         </span>
                     </div>
+                    <img src="./img/main.svg" alt="1">
                 </div>
-                <img src="./img/main.png" alt="1">
+               
+                <span id="btn-sub-img" class="btn b-Shadow">
+                    <a href="https://www.market.flet.su/">
+                        Зарегистрироваться
+                    </a>
+                </span>
             </section>
             <section id="automation">
                 <hgroup>
@@ -75,13 +85,13 @@
                     </div>
                     <div class="item">
                         <img src="./img/2.svg" alt="">
-                        <h4>Узнаваемость 24/7</h4>
+                        <h4>Узнаваемость</h4>
                         <p>Ваше приложение будет узнаваемым, а бизнес резко выделяться на фоне конкурентов
                         </p>
                     </div>
                     <div class="item">
                         <img src="./img/3.svg" alt="">
-                        <h4>Масштабируемость 24/7</h4>
+                        <h4>Масштабируемость</h4>
                         <p>Бизнес можно расширять в любом направлении и покарять горизонты: вводить новые товары и
                             услуги
                         </p>
@@ -132,8 +142,11 @@
                         о том, как пройти регистрацию, ввести данные,
                         заполнить товары и многое другое
                     </p>
-                    <a href="https://market-api.flet.su/api/print/help"><span class="btn b-Shadow">Смотреть
-                            инструкции</span></a>
+                    <div id="know-btn">
+                        <a href="https://market-api.flet.su/api/print/help"><span class="btn b-Shadow">Смотреть
+                                инструкции</span>
+                        </a>
+                    </div>
                 </div>
                 <img src="./img/4.svg" alt="">
             </section>
@@ -144,19 +157,27 @@
                 </hgroup>
                 <div id="card-container__items">
                     <div class="card-container__item">
-                        <h3>&#171;С нами надолго&#187;</h3>
-                        <p class="big-text">1 800 р./м.</p>
-                        <span>при оплате 12 месяцев</span>
+                        <h3>&#171;Легче лёгкого&#187;</h3>
+                        <p class="big-text">0 р./м.</p>
+                        <span style="width: 212px; height: 19px;"></span>
                         <p class="card-description">
-                            + Комиссия с продаж за пользование платформой Флет 1%
+                            + Комиссия с продаж за пользование платформой Флет 7% <br>
+                            + Публикация мобильного
+                            приложения «Клиент» в
+                            Google play (для Android)
+
                         </p>
                     </div>
                     <div class="card-container__item">
-                        <h3>&#171;Легче лёгкого&#187;</h3>
-                        <p class="big-text">3 500 р./м.</p>
-                        <span>при оплате за 3 месяца</span>
+                        <h3>&#171;С нами надолго&#187;</h3>
+                        <p class="big-text">1 800 р./м.</p>
+                        <span>при оплате за 12 месяцев</span>
                         <p class="card-description">
-                            + Комиссия с продаж за пользование платформой Флет 1,5%
+                            + Комиссия с продаж за пользование платформой Флет 1%<br>
+                            + Публикация мобильного
+                            приложения «Клиент» в Google
+                            play, AppGallery (для Android) и
+                            App Store (для ios)
                         </p>
                     </div>
                 </div>
