@@ -842,10 +842,26 @@ small {
         text-align: center;
     }
 
-    #mobile-app img {
-        margin: 40px auto;
+    #mobile-app img, #knowledge-base img {
+        width: 350px;
+        height: 350px;
+        margin: 80px auto;
     }
-
+    footer h2 {
+        font-size: 30px;
+    }
+    footer p a {
+        font-weight: 400;
+    }
+    address p:nth-child(1){
+        line-height: 40px;
+    }
+    address {
+        padding-top: 30px;
+    }
+    address>div {
+        margin-top: 15px;
+    }
     form h3 {
         line-height: 40px;
         font-size: 20px;
@@ -856,11 +872,6 @@ small {
         line-height: 40px;
     }
 
-    #knowledge-base div a {
-        display: inline-block;
-        transform: translateY(50%);
-    }
-
     .card-container__item {
         padding-left: 20px;
         padding-right: 20px;
@@ -868,6 +879,9 @@ small {
 
     .big-text {
         font-size: 45px;
+    }
+    #card-wrapper div.item {
+        margin-left: 0px;
     }
 }
 
