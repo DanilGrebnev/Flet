@@ -51,9 +51,12 @@ body h2 {
     color: var(--h2-c);
     font-size: 40px;
 }
-header h1, header h2 {
+
+header h1,
+header h2 {
     line-height: 70px;
 }
+
 #main-wrapper {
     padding-top: 83px;
     width: 100%;
@@ -104,29 +107,41 @@ header ul {
     justify-content: space-between;
     width: 100%;
 }
+
 header li {
     position: relative;
-	color: #00a650; /*задаём цвет ссылки*/
-	cursor: pointer;
-	line-height: 1; /*задаём высоту строки*/
-	text-decoration: none; /*убираем подчёркивание*/
+    color: #00a650;
+    /*задаём цвет ссылки*/
+    cursor: pointer;
+    line-height: 1;
+    /*задаём высоту строки*/
+    text-decoration: none;
+    /*убираем подчёркивание*/
 }
+
 header li:after {
     margin-top: 5px;
-	display: block;
-	position: absolute;
-	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
-	width: 0;/*задаём длинну линии до наведения курсора*/
-	height: 2px; /*задаём ширину линии*/
-	background-color: #00a650; /*задаём цвет линии*/
-	content: "";
-	transition: width 0.3s ease-out; /*задаём время анимации*/
+    display: block;
+    position: absolute;
+    left: 0;
+    /*изменить на right:0;, чтобы изменить направление подчёркивания */
+    width: 0;
+    /*задаём длинну линии до наведения курсора*/
+    height: 2px;
+    /*задаём ширину линии*/
+    background-color: #00a650;
+    /*задаём цвет линии*/
+    content: "";
+    transition: width 0.3s ease-out;
+    /*задаём время анимации*/
 }
 
 header li:hover:after,
 header li:focus:after {
-	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+    width: 100%;
+    /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
 }
+
 header div {
     font-size: 20px;
 }
@@ -181,6 +196,7 @@ h1,
 h2 {
     font-size: 80px;
 }
+
 #mobile-app h2,
 #fees-size {
     max-width: 747px;
@@ -202,6 +218,7 @@ h2 {
 #automation {
     margin-top: 159px;
 }
+
 #automation h3 {
     margin-top: 40px;
     font-size: 24px;
@@ -232,8 +249,10 @@ h2 {
     display: flex;
     flex-wrap: wrap;
 }
-#card-wrapper div:nth-child(2), #card-wrapper div:nth-child(3) {
-margin-left: 20px;
+
+#card-wrapper div:nth-child(2),
+#card-wrapper div:nth-child(3) {
+    margin-left: 20px;
 }
 
 #card-wrapper img {
@@ -399,6 +418,7 @@ button.b-Shadow:hover,
 
 #tariffs hgroup h2,
 #tariffs hgroup h3 {
+    line-height: 45px;
     text-align: center;
 }
 
@@ -426,8 +446,9 @@ button.b-Shadow:hover,
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 542px;
-    height: 371px;
+    max-width: 796px;
+    width: 100%;
+    padding-bottom: 70px;
 }
 
 .card-container__item span {
@@ -450,7 +471,8 @@ button.b-Shadow:hover,
 .card-description {
     line-height: 30px;
     margin-top: 61px;
-    width: 380px;
+    max-width: 380px;
+    width: 100%;
 }
 
 #tariffs #h3-include {
@@ -521,9 +543,10 @@ small {
 /* @media screen and (max-width: 1678px) {} */
 
 @media screen and (max-width: 1200px) {
-    header{
+    header {
         gap: 15px;
     }
+
     #card-container__items {
         flex-wrap: wrap;
     }
@@ -565,6 +588,7 @@ small {
     #mobile-app img {
         margin-top: var(--head-img);
     }
+
     .inp-items {
         width: 100%;
         flex-direction: column;
@@ -577,7 +601,7 @@ small {
     .inp-item {
         min-width: 100%;
     }
-    
+
 }
 
 @media screen and (max-width: 960px) {
@@ -608,13 +632,14 @@ small {
 }
 
 @media screen and (max-width: 878px) {
-    header{
+    header {
         flex-direction: column;
         justify-content: center;
     }
-header img {
-    margin:  0 auto;
-}
+
+    header img {
+        margin: 0 auto;
+    }
 }
 
 @media screen and (max-width: 760px) {
@@ -639,6 +664,46 @@ header img {
         align-items: center;
         gap: 20px;
     }
+}
+
+@media screen and (max-width: 580px) {
+    h1, h2, h3, h4 {
+        text-align: center;
+    }
+    #mobile-app h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+    #mobile-app h2 {
+        line-height: 40px;
+        font-size: 30px;
+    }
+    #mobile-app h2 span {
+        font-size: 30px;
+    }
+    #mobile-app-block {
+        text-align: center;
+    }
+    #mobile-app img {
+        margin: 40px auto;
+    }
+    form h3 {
+        line-height: 40px;
+        font-size: 20px;
+    }
+    form h2 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+    #knowledge-base div a {
+        display: inline-block;
+        transform: translateY(50%);
+    }
+    .card-container__item{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
 }
 
 @media screen and (max-width: 420px) {
