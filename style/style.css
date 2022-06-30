@@ -692,7 +692,7 @@ small {
         font-size: 20px;
     }
     form h2 {
-        font-size: 35px;
+        font-size: 30px;
         line-height: 40px;
     }
     #knowledge-base div a {
@@ -703,7 +703,9 @@ small {
         padding-left: 20px;
         padding-right: 20px;
     }
-    
+    .big-text {
+        font-size: 45px;
+    }
 }
 
 @media screen and (max-width: 420px) {
