@@ -41,7 +41,13 @@ body {
     font-weight: 400;
     line-height: auto;
     font-size: 20px;
+}
 
+.itcss{
+    display: none;
+}
+.itcss2{
+    display: none;
 }
 
 body h2 {
@@ -515,7 +521,7 @@ button.b-Shadow,
     align-items: center;
     max-width: 690px;
     width: 100%;
-    padding-bottom: 70px;
+    padding-bottom: 30px;
 }
 
 .card-container__item span {
@@ -619,10 +625,13 @@ small {
         height: 450px;
         margin-top: 50px;
     }
+
+    .card-container__item{
+        max-width: 500px;
+    }
 }
 
 @media screen and (max-width: 1400px) {
-
 
     #mobile-app img {
         width: 450px;
@@ -668,6 +677,26 @@ small {
 }
 
 @media screen and (max-width: 1200px) {
+    #card-container__items{
+        display: none;
+    }
+    .itcss2 .itcss__wrapper{
+        padding: 30px 0 30px 0;
+    }
+    .card-container__item{
+        transform: scale(.9);
+    }
+    #card-container__items div:nth-child(2){
+        margin-left: 0px;
+    }
+    
+    .itcss2{
+        display: block;
+    }
+    .itcss__item{
+        display: flex;
+        justify-content: center;
+    }
     header {
         gap: 15px;
     }
@@ -696,7 +725,7 @@ small {
     }
 
     #card-container__items div:nth-child(2) {
-        margin-top: 70px;
+        /* margin-top: 70px; */
         margin-left: 0px;
     }
 
@@ -725,7 +754,13 @@ small {
         text-align: center;
     }
 }
+@media screen and (max-width: 1110px ) {
+    #card-container__items{
+        display: none;
+    }
+}
 @media screen and (max-width: 1160px) {
+    
     header {
         flex-direction: column;
         align-items: center;
@@ -756,10 +791,18 @@ small {
     .inp-item {
         min-width: 100%;
     }
-
+    .inp-items .inp-item {
+        margin-top: 30px;
+    }
 }
 
 @media screen and (max-width: 1100px) {
+    .itcss1, .itcss2{
+        display: flex;
+    }
+    form{
+        margin-top: 30px;
+    }
     #card-wrapper {
         flex-direction: column;
         align-items: center;
@@ -806,6 +849,7 @@ small {
 }
 
 @media screen and (max-width: 960px) {
+    
     #knowledge-base {
         flex-wrap: wrap;
     }
@@ -823,7 +867,6 @@ small {
     }
 
     .inp-items .inp-item:nth-child(3) {
-        margin-top: var(--form-el-mt);
         min-width: 100%;
     }
 
@@ -877,13 +920,11 @@ small {
         margin-top: 50px;
     }
 
-
 }
 
 @media screen and (max-width: 760px) {
     .inp-items .inp-item {
         min-width: 100%;
-        margin-top: var(--form-el-mt);
     }
 
     .inp-items .inp-item input {
@@ -901,6 +942,25 @@ small {
         flex-direction: column;
         align-items: center;
         gap: 20px;
+    }
+
+}
+@media screen and (max-width: 640px) {
+    #tariffs h2 {
+        margin-bottom: 0px;
+    }
+    .card-container__item{
+        transform: scale(.8);
+    }
+    #tariffs #h3-include {
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+    #tariffs{
+        padding: 0px;
+    }
+    .itcss2 .itcss__wrapper {
+        padding: 0;
     }
 
 }

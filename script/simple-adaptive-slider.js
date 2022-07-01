@@ -5,7 +5,12 @@
  */
  document.addEventListener('DOMContentLoaded', function () {
   // инициализация слайдера
-  var slider = new ItcSimpleSlider('.itcss', {
+  var slider = new ItcSimpleSlider('.itcss1', {
+    loop: true,
+    autoplay: true,
+    swipe: true
+  });
+  var slider = new ItcSimpleSlider('.itcss2', {
     loop: true,
     autoplay: true,
     swipe: true

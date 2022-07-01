@@ -4,8 +4,28 @@
   * Licensed under MIT (https://github.com/itchief/ui-components/blob/master/LICENSE)
   */
 
+  /* дополнительные стили для этого примера */
+  .itcss__items {
+    counter-reset: slide;
+  }
+
+  .itcss__item {
+    counter-increment: slide;
+  }
+
+  .itcss__item>div::before {
+    content: counter(slide);
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #fff;
+    font-style: italic;
+    font-size: 32px;
+    font-weight: bold;
+    display: none;
+  }
 /* стили для корневого элемента слайдера */
-.itcss {
+.itcss1, .itcss2 {
   position: relative;
   overflow: hidden;
   max-width: 600px;
@@ -13,6 +33,7 @@
   margin-left: auto;
   margin-right: auto;
 }
+
 
 /* стили для wrapper */
 .itcss__wrapper {
@@ -74,7 +95,10 @@
 .itcss__control_next {
   right: 0;
 }
-
+/* Скрыть кнопки */
+.itcss__control, .itcss__control::before {
+  display: none;
+}
 .itcss__control::before {
   content: '';
   display: inline-block;
@@ -83,7 +107,7 @@
   background: transparent no-repeat center center;
   background-size: 100% 100%;
   color: black;
-  
+ 
 }
 
 .itcss__control_prev::before {
