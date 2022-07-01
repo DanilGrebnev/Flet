@@ -369,7 +369,8 @@ class ItcSimpleSlider {
         }
         this._hasSwiping = true;
       }
-      e.preventDefault();
+      // console.log(e.type)
+      e.type !== 'touchmove' ? preventDefault() : null
       if (!this._config.loop) {
         const isBeforeFirst = this._currentIndex + 1 >= this._elsItem.length && diffPosX >= 0;
         const isAfterLast = this._currentIndex <= 0 && diffPosX <= 0;
