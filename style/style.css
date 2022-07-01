@@ -49,7 +49,9 @@ body h2 {
     color: var(--h2-c);
     font-weight: 600;
 }
-
+.slider-wrapper {
+    display: none;
+}
 /* Бургер меню */
 
 #burger {
@@ -353,11 +355,11 @@ form h2 {
     text-align: center;
     font-weight: 600;
     font-size: 48px;
-    line-height: 70px;
+    line-height: normal;
 }
 
 form h3 {
-    line-height: 40px;
+    line-height: normal;
 }
 
 .inp-item {
@@ -601,7 +603,7 @@ small {
 /* Медиа запросы */
 :root {
     --head-img: 54px;
-    --form-el-mt: 30px
+    --form-el-mt: 0px
 }
 
 @media screen and (max-width: 1600px) {
@@ -669,7 +671,9 @@ small {
     header {
         gap: 15px;
     }
-
+    #tariffs{
+        margin-top: 0px;
+    }
     #sub-mobile {
         flex-direction: column;
     }
@@ -740,10 +744,6 @@ small {
         flex-wrap: wrap;
     }
 
-    #mobile-app img {
-        margin-top: var(--head-img);
-    }
-
     .inp-items {
         width: 100%;
         flex-direction: column;
@@ -764,19 +764,22 @@ small {
         flex-direction: column;
         align-items: center;
     }
-
-    #automation h2,
-    #automation h3,
+    #card-wrapper>.item {
+        display: none;
+    }
+    #card-wrapper div:nth-child(2), #card-wrapper div:nth-child(3) {
+        margin-left: 0px;
+    }
+    .slider-wrapper {
+        display: block;
+    }
     #automation h4 {
         text-align: center;
     }
 
-    #automation img {
-        margin-top: 30px;
-    }
-
     #card-wrapper .item {
         width: 100%;
+        margin: 0px;
     }
 
     #card-wrapper p {
@@ -791,6 +794,8 @@ small {
         flex-direction: column;
 
     }
+
+
 }
 
 @media screen and (max-width: 1024px) {
@@ -841,7 +846,7 @@ small {
     }
 
     #mobile-app img {
-        margin: 70px auto;
+        margin: 0px auto;
     }
 
     #mobile-app-block {
@@ -941,7 +946,7 @@ small {
     #knowledge-base img {
         width: 350px;
         height: 350px;
-        margin: 80px auto;
+        margin: 0px auto;
     }
 
     footer h2 {
@@ -987,7 +992,6 @@ small {
         margin-left: 0px;
     }
 }
-
 
 @media screen and (max-width: 420px) {
     .btn {
