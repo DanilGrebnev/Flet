@@ -60,9 +60,11 @@ body h2 {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
 }
+
 #btn-sub-img {
     display: none;
 }
+
 #burger:after {
     position: absolute;
     content: "";
@@ -221,9 +223,9 @@ header div {
     /* position: absolute; */
     right: 0;
     bottom: 0;
-    max-width: 675px;
-    height: 629px;
-    margin-top: 146px;
+    max-width: 635px;
+    height: 635px;
+    margin-top: 50px;
 }
 
 #mobile-app a {
@@ -235,9 +237,12 @@ header div {
     margin-top: 159px;
     margin-top: 15px;
 }
+
 #sub-mobile {
     display: flex;
+    justify-content: space-between;
 }
+
 /* Тень заголовков */
 #mobile-app h1,
 #mobile-app h2 {
@@ -251,15 +256,13 @@ h2 {
 
 #mobile-app h2,
 #fees-size {
-    max-width: 747px;
     width: 100%;
-    font-size: 66px;
+    font-size: 60px;
     color: var(--main);
 }
 
 #mobile-app-block__subtitle {
     margin-top: 30px;
-    max-width: 653px;
     width: 100%;
     margin-bottom: 54px;
     font-weight: 400;
@@ -268,7 +271,7 @@ h2 {
 
 /* Блок автоматизация  */
 #automation {
-    margin-top: 159px;
+    margin-top: 70px;
 }
 
 #automation h3 {
@@ -288,9 +291,11 @@ h2 {
 .item {
     width: 294px;
 }
+
 .item p {
     text-align: justify;
 }
+
 .item h4 {
     margin-top: 20px;
     font-size: var(--h4-s);
@@ -599,14 +604,51 @@ small {
     --form-el-mt: 30px
 }
 
-/* @media screen and (max-width: 1678px) {} */
+@media screen and (max-width: 1600px) {
+    #mobile-app img {
+        width: 536px;
+        height: 536px;
+    }
+}
+
+@media screen and (max-width: 1466px) {
+    #mobile-app img {
+        width: 450px;
+        height: 450px;
+        margin-top: 50px;
+    }
+}
+
 @media screen and (max-width: 1400px) {
 
 
     #mobile-app img {
         width: 450px;
         height: 450px;
-        margin-top: 70px;
+    }
+}
+
+@media screen and (max-width: 1292px) {
+    #sub-mobile {
+        flex-direction: column;
+        align-items: center;
+    }
+    #btn-on-img{
+        display: none;
+    }
+    #btn-sub-img {
+        display: block;
+        width: 288px;
+        text-align: center;
+        margin: 20px auto 0 auto;
+        
+    }
+    #mobile-app-block__subtitle{
+        margin-bottom: 0px;
+    }
+    
+    #mobile-app img {
+        margin-top: 0px;
     }
 }
 
@@ -627,15 +669,17 @@ small {
     header {
         gap: 15px;
     }
-    #sub-mobile{
+
+    #sub-mobile {
         flex-direction: column;
     }
+
     #mobile-app {
         flex-direction: column;
     }
 
     #mobile-app img {
-        margin: 60px auto 0px auto;
+        margin: 0px auto 0px auto;
     }
 
     #card-container__items {
@@ -672,7 +716,11 @@ small {
         text-align: justify;
     }
 }
-
+@media screen and (max-width: 1186px) {
+    #mobile-app h1,#mobile-app h2 {
+        text-align: center;
+    }
+}
 @media screen and (max-width: 1160px) {
     header {
         flex-direction: column;
@@ -946,17 +994,21 @@ small {
         padding: 9px;
         font-size: 12px;
     }
+
     #btn-on-img {
         display: none;
     }
+
     #main-wrapper {
         padding-top: 20px;
     }
+
     #mobile-app {
         margin-top: 20px;
     }
+
     #mobile-app #btn-sub-img {
-        margin:  0 auto;
+        margin: 0 auto;
         text-align: center;
         display: block;
         padding: 0px;
@@ -964,6 +1016,7 @@ small {
         padding-bottom: 9px;
         width: 156px;
     }
+
     #main-wrapper {
         margin: 0 auto;
         max-width: 100%;
@@ -989,26 +1042,32 @@ small {
     #mobile-app h1 {
         font-size: 22px;
     }
+
     #mobile-app-block {
         margin-top: 5px;
     }
+
     #mobile-app h2 {
         font-size: 16px;
     }
+
     #mobile-app-block__subtitle {
         margin: 20px 0px 10px 0px;
         line-height: normal;
         font-size: 12px;
     }
+
     #mobile-app img {
         margin-top: 0px;
         margin-bottom: 10px;
         width: 244px;
         height: 240px;
     }
+
     #card-wrapper img {
         margin-top: 0px;
     }
+
     header #burger {
         display: none;
         position: relative;
@@ -1095,66 +1154,84 @@ small {
         font-size: 16px;
 
     }
+
     #knowledge-base {
         margin-top: 20px;
     }
+
     #knowledge-base p {
         margin-top: 20px;
         margin-bottom: 20px;
         font-size: 12px;
     }
+
     #knowledge-base img {
         width: 288px;
         height: 235px;
         margin-bottom: 0px;
         margin-top: 20px;
     }
+
     #knowledge-base .btn {
         margin: 20px auto 0px auto;
         font-size: 12px;
         padding: 9px 8px;
     }
+
     #know-btn {
         display: flex;
         justify-content: center;
     }
-    #tariffs{
+
+    #tariffs {
         margin-top: 20px;
     }
-    #tariffs hgroup h2, #tariffs hgroup h3 {
+
+    #tariffs hgroup h2,
+    #tariffs hgroup h3 {
         text-align: center;
         line-height: normal;
     }
+
     #tariffs hgroup h2 {
         font-size: 16px;
     }
+
     #tariffs hgroup h3 {
         font-size: 12px;
     }
+
     footer {
         margin-top: 40px;
     }
+
     address {
         margin-top: 10px;
         padding-top: 0px;
     }
+
     footer h2 {
         font-size: 16px;
     }
+
     address p:nth-child(1) {
         font-size: 12px;
         line-height: normal;
     }
-    footer p a, footer p {
+
+    footer p a,
+    footer p {
         font-size: 10px;
     }
+
     address p:nth-child(2) {
         line-height: normal;
     }
+
     small {
         font-size: 10px;
         margin-top: 0px;
         padding-top: 10px;
     }
-    
+
 }
