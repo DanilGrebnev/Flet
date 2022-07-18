@@ -1469,7 +1469,6 @@ small {
         width: 288px;
         height: 235px;
         margin-bottom: 0px;
-        margin-top: 20px;
     }
 
     #knowledge-base .btn {
@@ -1479,8 +1478,7 @@ small {
     }
 
     #know-btn {
-        display: flex;
-        justify-content: center;
+        display: none;
     }
 
     #tariffs {
