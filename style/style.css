@@ -499,13 +499,16 @@ button.b-Shadow,
     bottom: 0px;
     display: block;
 }
-
+#knowledge-base #cloud-big {
+    width: 500px;
+}
 .title-small {
     display: block;
     font-weight: 300;
     font-size: 24px;
     line-height: 1.5;
 }
+
 
 
 
@@ -1007,7 +1010,9 @@ small {
     #tariffs .title-medium {
         margin-top: 30px;
     }
-
+    #knowledge-base #cloud-big{
+        display: none;
+    }
     #phone {
         margin-top: 30px;
     }
