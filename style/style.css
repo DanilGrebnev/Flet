@@ -146,10 +146,6 @@ header>div {
     flex-wrap: wrap;
 }
 
-img {
-    width: 100%;
-}
-
 header img {
     max-width: 315px;
     height: 74px;
@@ -499,9 +495,11 @@ button.b-Shadow,
     bottom: 0px;
     display: block;
 }
+
 #knowledge-base #cloud-big {
     width: 500px;
 }
+
 .title-small {
     display: block;
     font-weight: 300;
@@ -509,12 +507,31 @@ button.b-Shadow,
     line-height: 1.5;
 }
 
-
-
-
 /* Блог с тарифами */
 #tariffs {
     margin-top: 135px;
+}
+
+#tariffs ul {
+    position: relative;
+}
+
+#tariffs img,
+#tariffs img {
+    position: absolute;
+}
+
+#rocket-bl {
+    bottom: 0;
+    right: 0;
+}
+#cloud-bl {
+    transform: scale(1.5);
+    right: 20%;
+}
+#tariffs #rocket {
+    top: 0;
+    right: 0;
 }
 
 .title-medium {
@@ -645,7 +662,11 @@ small {
     --form-el-mt: 0px
 }
 
-
+@media screen and (max-width: 1663px) {
+#rocket-bl{
+    transform: scale(.9);
+}
+}
 
 @media screen and (max-width: 1466px) {
     .card-container__item {
@@ -1010,9 +1031,11 @@ small {
     #tariffs .title-medium {
         margin-top: 30px;
     }
-    #knowledge-base #cloud-big{
+
+    #knowledge-base #cloud-big {
         display: none;
     }
+
     #phone {
         margin-top: 30px;
     }
@@ -1133,9 +1156,11 @@ small {
     form h3 {
         font-size: 16px;
     }
+
     .title-medium {
         font-size: 24px;
     }
+
     form h3 {
         margin-bottom: 10px;
     }
@@ -1220,7 +1245,7 @@ small {
     #tariffs {
         padding: 0px;
     }
-    
+
 
     .itcss2 .itcss__wrapper {
         padding: 0;
@@ -1319,6 +1344,7 @@ small {
     #phone {
         transform: scale(.6);
     }
+
     #h3-include {
         font-size: 16px;
     }
@@ -1494,14 +1520,17 @@ small {
     #tariffs hgroup h3 {
         text-align: center;
     }
+
     #tariffs li {
         margin-bottom: 8px;
         font-size: 10px;
     }
+
     #tariffs li::before {
-    width: 8px;
-    height: 8px;
+        width: 8px;
+        height: 8px;
     }
+
     #tariffs hgroup h2 {
         font-size: 16px;
     }
@@ -1522,13 +1551,15 @@ small {
     footer h2 {
         font-size: 16px;
     }
-    
+
     address p:nth-child(1) {
         font-size: 12px;
     }
-    address > div {
+
+    address>div {
         margin-top: 0;
     }
+
     footer p a,
     footer p {
         font-size: 10px;
