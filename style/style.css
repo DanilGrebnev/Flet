@@ -43,34 +43,40 @@ body {
     font-size: 20px;
 }
 
-.itcss1{
-    display: none;
-}
-.itcss2{
+.itcss1 {
     display: none;
 }
 
-body h2 {
+.itcss2 {
+    display: none;
+}
+
+#mobile-app-block h2 {
     font-size: var(--h2-size);
     color: var(--h2-c);
     font-weight: 600;
 }
+
 .slider-wrapper {
     display: none;
 }
+
 /* Бургер меню */
 
 #burger {
     display: none;
+    min-width: 30px;
     width: 30px;
     height: 8px;
     position: absolute;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
 }
-#menu ul{
+
+#menu ul {
     display: none;
 }
+
 #btn-sub-img {
     display: none;
 }
@@ -112,29 +118,24 @@ header {
     align-items: center;
 }
 
-a.glo {
-    border: 1px solid black;
+.glo {
     transition: all .3s ease-in;
-    display: flex;
-    /* width: 243px; */
-    padding: 12px;
-    /* height: 68px; */
+    border: 1px solid black;
+    display: block;
     align-items: center;
     justify-content: center;
     text-align: center;
+    font-size: 20px;
+    margin: 0;
+    padding: 11px 5px;
 }
 
-a.glo:hover {
+.glo:hover {
     box-shadow: 0px 4px var(--weight-shadow) rgba(0, 0, 0, .25);
     border-color: var(--main);
     background: var(--main);
-
-}
-
-a.glo:hover div {
     color: white;
 }
-
 
 header>div {
     max-width: 1015px;
@@ -218,29 +219,47 @@ header div {
 /* Блок Мобильное приложение */
 #mobile-app {
     margin-top: 99px;
-    /* border: 2px solid black; */
-    /* display: flex; */
     justify-content: space-between;
-    /* position: relative; */
 }
 
-
-#mobile-app img {
-    /* position: absolute; */
-    right: 0;
-    bottom: 0;
-    max-width: 635px;
-    height: 635px;
-    margin-top: 50px;
+#phone {
+    position: relative;
+    width: 570px;
+    height: 550px;
+    background-image: url('../img/phone.svg');
+    background-position: bottom right;
+    background-size: contain;
+    /* border: 2px solid black; */
+    background-repeat: no-repeat;
 }
 
-#mobile-app a {
-    color: inherit;
+#cloudmin,
+#cloudbig {
+    position: absolute;
+}
+
+#cloudmin {
+    width: 156px;
+    height: 140px;
+    /* border: 2px solid black; */
+    right: 0px;
+    top: 0px;
+    transform: translate(50%, -50%);
+}
+
+#cloudbig {
+    width: 281px;
+    height: 240px;
+    top: 50%;
+    transform: translateX(-110%);
+}
+
+.btn .b-Shadow {
+    color: var(--btn-c);
     font-size: inherit;
 }
 
 #mobile-app-block {
-    margin-top: 159px;
     margin-top: 15px;
 }
 
@@ -248,17 +267,14 @@ header div {
     display: flex;
     justify-content: space-between;
 }
-
-/* Тень заголовков */
+#mobile-app h1 {
+    font-size: 80px;
+}
 #mobile-app h1,
 #mobile-app h2 {
     font-weight: 600;
 }
 
-h1,
-h2 {
-    font-size: 80px;
-}
 
 #mobile-app h2,
 #fees-size {
@@ -280,7 +296,7 @@ h2 {
     margin-top: 70px;
 }
 
-#automation h3 {
+.title-small {
     margin-top: 10px;
     font-size: 24px;
     font-weight: 300;
@@ -455,29 +471,39 @@ button.b-Shadow,
 
 /* Блок база знаний */
 #knowledge-base {
-    display: flex;
-    /* flex-wrap: wrap; */
-    /* height: 546px; */
-    /* position: relative; */
-    margin-top: 139px;
+    margin-top: 50px;
     box-sizing: border-box;
     justify-content: space-between;
 }
 
-#knowledge-base img {
-    max-width: 722px;
-    width: 100%;
-    height: 554px;
-    right: 0px;
-    bottom: 0px;
+#knowledge-content {
+    display: flex;
 }
 
-#knowledge-base p {
-    margin: 50px 0 82px 0;
+#know-btn {
+    margin-top: 98px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#know-btn2 {
+    display: none;
+}
+
+#knowledge-base img {
+    max-width: 579px;
+    width: 100%;
+    height: 535px;
+    right: 0px;
+    bottom: 0px;
+    display: block;
+}
+
+.title-small {
+    display: block;
     font-weight: 300;
     font-size: 24px;
-    line-height: 45px;
-    max-width: 712px;
+    line-height: 1.5;
 }
 
 
@@ -486,15 +512,15 @@ button.b-Shadow,
 #tariffs {
     margin-top: 135px;
 }
-
-#tariffs hgroup h2,
-#tariffs hgroup h3 {
-    line-height: 45px;
-    text-align: start;
+.title-medium{
+    font-size: 40px;
+    font-weight: bold;
 }
-
-#tariffs h2 {
-    line-height: 70px;
+.title-small {
+font-size: 24px;
+}
+.title-medium, .title-small{
+    text-align: start;
 }
 
 #card-container__items {
@@ -534,26 +560,25 @@ button.b-Shadow,
 
 .big-text {
     font-weight: 600;
-    line-height: 70px;
     font-size: 64px;
     color: #58B80C;
 }
 
 .card-description {
-    line-height: 30px;
     margin-top: 61px;
     max-width: 380px;
     width: 100%;
+    line-height: 1.5;
 }
 
 #tariffs #h3-include {
+    text-align: start;
     margin-top: 93px;
     margin-bottom: 52px;
 }
 
 #tariffs li {
     font-size: 20px;
-    line-height: 27px;
     margin-bottom: 27px;
 }
 
@@ -572,7 +597,9 @@ footer {
     margin-top: 149px;
     padding-bottom: 44px;
 }
-
+footer {
+    line-height: 3;
+}
 address {
     display: flex;
     flex-wrap: wrap;
@@ -586,13 +613,11 @@ address p {
 address p:nth-child(1) {
     font-size: 18px;
     font-weight: 600;
-    line-height: 70px;
 }
 
 address p:nth-child(2) {
     font-weight: 900;
     font-size: 24px;
-    line-height: 32px;
 }
 
 small {
@@ -601,7 +626,6 @@ small {
     margin-top: 72px;
     font-weight: 300;
     font-size: 18px;
-    line-height: 34px;
 }
 
 /* Медиа запросы */
@@ -610,55 +634,68 @@ small {
     --form-el-mt: 0px
 }
 
-@media screen and (max-width: 1600px) {
-    #mobile-app img {
-        width: 536px;
-        height: 536px;
-    }
-}
+
 
 @media screen and (max-width: 1466px) {
-    #mobile-app img {
-        width: 450px;
-        height: 450px;
-        margin-top: 50px;
-    }
-
-    .card-container__item{
+    .card-container__item {
         max-width: 500px;
     }
+
+    #phone {
+        width: 582px;
+        height: 473px;
+    }
+
+    #cloudbig {
+        width: 192px;
+        height: 178px;
+    }
+
+    #cloudmin {
+        width: 120px;
+        height: 104px;
+    }
 }
 
-@media screen and (max-width: 1400px) {
-
-    #mobile-app img {
-        width: 450px;
+@media screen and (max-width: 1290px) {
+    #phone {
+        width: 509px;
         height: 450px;
     }
-}
 
-@media screen and (max-width: 1292px) {
+    #cloudmin {
+        width: 123px;
+        height: 106px;
+        transform: translate(50%, 0%);
+
+    }
+
+    #cloudbig {
+        width: 197px;
+        height: 132px;
+
+    }
+
     #sub-mobile {
-        flex-direction: column;
-        align-items: center;
+        /* flex-direction: column; */
+        align-items: start;
     }
-    #btn-on-img{
-        display: none;
+
+    #btn-on-img {
+        display: active;
     }
+
     #btn-sub-img {
-        display: block;
-        width: 288px;
+        display: none;
         text-align: center;
         margin: 20px auto 0 auto;
-        
+
     }
-    #mobile-app-block__subtitle{
-        margin-bottom: 0px;
+
+    #mobile-app-block__subtitle {
+        margin-bottom: 30px;
     }
-    
-    #mobile-app img {
-        margin-top: 0px;
-    }
+
 }
 
 @media screen and (max-width: 1220px) {
@@ -675,32 +712,67 @@ small {
 }
 
 @media screen and (max-width: 1200px) {
-    #card-container__items{
+    #phone {
+        margin: 0 auto;
+        width: 400px;
+        background-size: contain;
+        background-position: center;
+    }
+
+    .align {
+        text-align: center;
+    }
+
+    #btn-on-img {
         display: none;
     }
-    .itcss2 .itcss__wrapper{
+
+    #cloudmin {
+        transform: translate(50%, -50%);
+    }
+
+    #cloudbig {
+        transform: translateX(none);
+        bottom: 0;
+    }
+
+    #btn-sub-img {
+        display: inline-block;
+    }
+
+    #card-container__items {
+        display: none;
+    }
+
+    .itcss2 .itcss__wrapper {
         padding: 30px 0 30px 0;
     }
-    .card-container__item{
+
+    .card-container__item {
         transform: scale(.9);
     }
-    #card-container__items div:nth-child(2){
+
+    #card-container__items div:nth-child(2) {
         margin-left: 0px;
     }
-    
-    .itcss2{
+
+    .itcss2 {
         display: block;
     }
-    .itcss__item{
+
+    .itcss__item {
         display: flex;
         justify-content: center;
     }
+
     header {
         gap: 15px;
     }
-    #tariffs{
+
+    #tariffs {
         margin-top: 0px;
     }
+
     #sub-mobile {
         flex-direction: column;
     }
@@ -709,9 +781,6 @@ small {
         flex-direction: column;
     }
 
-    #mobile-app img {
-        margin: 0px auto 0px auto;
-    }
 
     #card-container__items {
         flex-wrap: wrap;
@@ -747,20 +816,45 @@ small {
         text-align: justify;
     }
 }
-@media screen and (max-width: 1186px) {
-    #mobile-app h1,#mobile-app h2 {
-        text-align: center;
+
+@media screen and (max-width: 1160px) {
+    #main-wrapper {
+        padding-top: 80px
     }
-}
-@media screen and (max-width: 1110px ) {
-    #card-container__items{
+
+    header #burger {
+        display: flex;
+        position: relative;
+    }
+
+    #menu {
+        position: absolute;
+        width: 50vw;
+        height: 100vh;
+        background: white;
+        transition: .5s;
+        transform: translateX(-100%);
+        z-index: 10;
+    }
+
+    #menu ul {
+        display: block;
+    }
+
+    #menu.active {
+        transform: translateX(0%);
+    }
+
+    #menu a {
+        display: block;
+        padding: 10px;
+    }
+
+    nav {
         display: none;
     }
-}
-@media screen and (max-width: 1160px) {
-    
+
     header {
-        flex-direction: column;
         align-items: center;
     }
 
@@ -789,31 +883,91 @@ small {
     .inp-item {
         min-width: 100%;
     }
+
     .inp-items .inp-item {
         margin-top: 30px;
     }
-}
 
-@media screen and (max-width: 1100px) {
-    .itcss1, .itcss2{
+    /*  */
+    .itcss1,
+    .itcss2 {
         display: flex;
     }
-    form{
+
+    form {
         margin-top: 30px;
     }
+
     #card-wrapper {
         flex-direction: column;
         align-items: center;
     }
+
     #card-wrapper>.item {
         display: none;
     }
-    #card-wrapper div:nth-child(2), #card-wrapper div:nth-child(3) {
+
+    #card-wrapper div:nth-child(2),
+    #card-wrapper div:nth-child(3) {
         margin-left: 0px;
     }
+
     .slider-wrapper {
         display: block;
     }
+
+    #automation h4 {
+        text-align: center;
+    }
+
+    #card-wrapper .item {
+        width: 100%;
+        margin: 0px;
+    }
+
+    #card-wrapper p {
+        width: 100%;
+    }
+
+    footer h2 {
+        text-align: center;
+    }
+
+    address {
+        flex-direction: column;
+
+    }
+}
+
+/* @media screen and (max-width: 1100px) {
+
+    .itcss1,
+    .itcss2 {
+        display: flex;
+    }
+
+    form {
+        margin-top: 30px;
+    }
+
+    #card-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #card-wrapper>.item {
+        display: none;
+    }
+
+    #card-wrapper div:nth-child(2),
+    #card-wrapper div:nth-child(3) {
+        margin-left: 0px;
+    }
+
+    .slider-wrapper {
+        display: block;
+    }
+
     #automation h4 {
         text-align: center;
     }
@@ -837,7 +991,7 @@ small {
     }
 
 
-}
+} */
 
 @media screen and (max-width: 1024px) {
     #card-wrapper {
@@ -847,7 +1001,18 @@ small {
 }
 
 @media screen and (max-width: 960px) {
-    
+    #phone {
+        margin-top: 30px;
+    }
+
+    #cloudmin {
+        transform: translate(50%, -50%);
+    }
+
+    #cloudbig {
+        transform: translate(-50%, -10%);
+    }
+
     #knowledge-base {
         flex-wrap: wrap;
     }
@@ -857,11 +1022,7 @@ small {
     }
 
     form {
-        padding-left: 30px;
-    }
-
-    form {
-        padding-right: 30px;
+        padding: 30px;
     }
 
     .inp-items .inp-item:nth-child(3) {
@@ -872,22 +1033,9 @@ small {
         min-width: 100%;
     }
 
-    header {
-        flex-direction: column;
-        justify-content: center;
-    }
-
     header img {
-        margin: 0 auto;
-    }
-
-    #mobile-app h1,
-    #mobile-app-block h2 {
-        text-align: center;
-    }
-
-    #mobile-app img {
-        margin: 0px auto;
+        transform: scale(.8);
+        margin: 0;
     }
 
     #mobile-app-block {
@@ -904,12 +1052,6 @@ small {
         margin-top: 50px;
     }
 
-    #automation hgroup h3,
-    #automation hgroup h2 {
-        display: block;
-        text-align: center;
-    }
-
     #card-wrapper {
         justify-content: space-around;
     }
@@ -917,6 +1059,104 @@ small {
     form {
         margin-top: 50px;
     }
+
+    #know-btn {
+        display: none;
+    }
+
+    #knowledge-content {
+        flex-direction: column;
+    }
+
+    #knowledge-base h2 {
+        text-align: start;
+    }
+
+    #knowledge-base {
+        text-align: center;
+    }
+
+    #know-btn2 {
+        display: inline-block;
+    }
+
+}
+
+@media screen and (max-width: 860px) {
+
+    #mobile-app h1 {
+        font-size: 36px
+    }
+    #mobile-app h2 {
+        font-size: 24px;
+    }
+    #mobile-app-block__subtitle{
+        margin: 0;
+        margin-top: 20px;
+    }
+    .glo {
+        font-size: 10px;
+    }
+
+    #mobile-app {
+        margin-top: 32px;
+    }
+
+    header img {
+        width: 160px;
+        height: 34px;
+    }
+
+    .h2-medium {
+        line-height: normal;
+        font-size: 24px;
+    }
+
+    .title-small,
+    #tariffs li,
+    form h3 {
+        font-size: 16px;
+        line-height: normal;
+    }
+
+    form h3 {
+        margin-bottom: 10px;
+    }
+
+    #tariffs .card-container__item h3 {
+        font-size: 20px;
+    }
+
+    form h2 {
+        font-size: 20px;
+    }
+
+    .inp-items {
+        font-size: 12px;
+        margin-top: 20px;
+    }
+
+    .form-footer {
+        margin-top: 35px;
+    }
+
+    .form-footer p {
+        font-size: 10px;
+    }
+
+    #knowledge-base p {
+        margin: 10px 0 10px 0;
+    }
+
+    .btn,
+    form button {
+        width: initial;
+        height: initial;
+        font-size: 15px;
+        padding: 12px 30px;
+        margin: 0 auto;
+    }
+
 
 }
 
@@ -942,69 +1182,47 @@ small {
         gap: 20px;
     }
 
+
 }
+
 @media screen and (max-width: 640px) {
+
     #tariffs h2 {
         margin-bottom: 0px;
     }
-    .card-container__item{
+
+    .card-container__item {
         transform: scale(.8);
     }
+
     #tariffs #h3-include {
         margin-top: 0px;
         margin-bottom: 30px;
     }
-    #tariffs{
+
+    #tariffs {
         padding: 0px;
     }
+
     .itcss2 .itcss__wrapper {
         padding: 0;
     }
 
-}
-
-@media screen and (max-width: 590px) {
-    #mobile-app h1 {
-        font-size: 70px;
-    }
-
-    #mobile-app-block h2 {
-        font-size: 56px;
+    header img {
+        transform: scale(.8);
     }
 }
 
 @media screen and (max-width: 580px) {
-
-    h1,
-    h2,
-    h3,
-    h4 {
-        text-align: center;
-    }
-
-    #mobile-app h1 {
-        font-size: 50px;
-        text-align: center;
-    }
-
-    #mobile-app h2 {
-        line-height: 40px;
-        font-size: 30px;
-    }
-
-    #mobile-app h2 span {
-        font-size: 30px;
-    }
-
-    #mobile-app-block {
-        text-align: center;
-    }
-
-    #mobile-app img,
     #knowledge-base img {
         width: 350px;
         height: 350px;
         margin: 0px auto;
+    }
+
+    #phone,
+    #knowledge-content img {
+        transform: scale(.8);
     }
 
     footer h2 {
@@ -1016,7 +1234,6 @@ small {
     }
 
     address p:nth-child(1) {
-        line-height: 40px;
     }
 
     address {
@@ -1028,13 +1245,11 @@ small {
     }
 
     form h3 {
-        line-height: 40px;
         font-size: 20px;
     }
 
     form h2 {
         font-size: 30px;
-        line-height: 40px;
     }
 
     .card-container__item {
@@ -1051,14 +1266,51 @@ small {
     }
 }
 
+@media screen and (max-width: 450px) {
+    #phone {
+        margin-top: 0px;
+        transform: scale(.7);
+        height: 280px;
+    }
+
+    #mobile-app {
+    }
+
+    #mobile-app-block {
+        margin-top: 0px;
+    }
+
+    #mobile-app h1 {
+        font-size: 21px;
+    }
+
+    #mobile-app h2 {
+        font-size: 19px;
+    }
+
+    #mobile-app-block__subtitle {
+        font-size: 12px;
+        margin: 0;
+    }
+
+    #btn-sub-img {
+        margin-top: 0px;
+    }
+
+    .title-medium {
+        font-size: 16px;
+    }
+    .title-small{
+        font-size: 12px;
+        margin: 0;
+    }
+    .title-small, .title-medium{
+    } 
+    
+}
+
 @media screen and (max-width: 420px) {
-    #menu ul {
-        display: block;
-    }
-    #menu {
-        background: rgb(0, 0, 0, .8);
-        /* border-right: 1px solid black; */
-    }
+
     .btn {
         padding: 9px;
         font-size: 12px;
@@ -1106,7 +1358,6 @@ small {
     #mobile-app h1,
     #mobile-app h2 {
         text-align: start;
-        line-height: 18px;
     }
 
     #mobile-app h1 {
@@ -1123,15 +1374,7 @@ small {
 
     #mobile-app-block__subtitle {
         margin: 20px 0px 10px 0px;
-        line-height: normal;
         font-size: 12px;
-    }
-
-    #mobile-app img {
-        margin-top: 0px;
-        margin-bottom: 10px;
-        width: 244px;
-        height: 240px;
     }
 
     #card-wrapper img {
@@ -1141,33 +1384,6 @@ small {
     header #burger {
         display: flex;
         position: relative;
-    }
-    
-    #menu{
-        position: absolute;
-        width: 50vw;
-        height: 100vh;
-        background: white;
-        transition: .5s;
-        transform: translateX(-100%);
-        z-index: 1000;
-    }
-    #menu.active {
-        transform: translateX(0%);
-    }
-    #menu a {
-        display: block;
-        padding: 10px;
-    }
-    header a.glo {
-        margin: 0;
-        width: 97px;
-        height: 22px;
-        padding: 0;
-    }
-
-    header a.glo div {
-        font-size: 8px;
     }
 
     header img {
@@ -1193,7 +1409,6 @@ small {
 
     form h3,
     form h2 {
-        line-height: normal;
         margin-bottom: 10px;
     }
 
@@ -1214,7 +1429,6 @@ small {
     }
 
     form .form-footer p {
-        line-height: normal;
         font-size: 10px;
         margin-bottom: 0px;
         margin-top: 40px;
@@ -1231,9 +1445,7 @@ small {
         font-size: 12px;
     }
 
-    .h2-title,
     #knowledge-base p {
-        line-height: normal;
     }
 
     .h2-title {
@@ -1276,7 +1488,6 @@ small {
     #tariffs hgroup h2,
     #tariffs hgroup h3 {
         text-align: center;
-        line-height: normal;
     }
 
     #tariffs hgroup h2 {
@@ -1302,7 +1513,6 @@ small {
 
     address p:nth-child(1) {
         font-size: 12px;
-        line-height: normal;
     }
 
     footer p a,
@@ -1311,7 +1521,6 @@ small {
     }
 
     address p:nth-child(2) {
-        line-height: normal;
     }
 
     small {

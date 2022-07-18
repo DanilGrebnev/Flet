@@ -53,7 +53,8 @@
             <ul>
                 <li><a href="#automation" class="header-item">О системе</a></li>
                 <li><a href="#tariffs" class="header-item">Тарифы</a></li>
-                <li><a href="https://market-api.flet.su/api/print/help" target="_blank" class="header-item">Инструкции</a></li>
+                <li><a href="https://market-api.flet.su/api/print/help" target="_blank"
+                        class="header-item">Инструкции</a></li>
             </ul>
         </div>
         <main id="container">
@@ -61,7 +62,6 @@
                 <div id="burger">
                     <span></span>
                 </div>
-                
                 <img src="img/header-logo.svg" alt="Логотип">
                 <nav>
                     <ul>
@@ -71,41 +71,40 @@
                     </ul>
                 </nav>
                 <a class="glo" href="https://www.market.flet.su/">
-                    <div id="header-login ">
-                        <div>Войти</div>
-                        <div>Зарегистрироваться</div>
-                    </div>
+                    Войти <br>
+                    Зарегистрироваться
                 </a>
             </header>
             <section id="mobile-app">
-
                 <h1>Мобильное приложение</h1>
                 <div id="sub-mobile">
                     <div id="mobile-app-block">
                         <h2>для бизнеса любого размера за 0 руб./мес</h2>
                         <p id="mobile-app-block__subtitle">
-                            Ваше мобильное приложе&shy;ние
+                            Ваше мобильное приложе­ние
                             для магазина, ресторана, кафе,<br> булочной. Вообще для любого бизнеса
                         </p>
-                        <span id="btn-on-img" class="btn b-Shadow">
-                            <a href="https://www.market.flet.su/">
+                            <a id="btn-on-img" class="btn b-Shadow" href="https://www.market.flet.su/">
                                 Зарегистрироваться
                             </a>
-                        </span>
                     </div>
-                    <img src="./img/main.svg" alt="1">
+                    <!-- <img src="./img/main.svg" alt="1"> -->
+                    <div id="phone">
+                        <img id="cloudmin" src="./img/cloud-min.svg" alt="маленькое облачко">
+                        <img id="cloudbig" src='../img/cloud-big.svg' alt="">
+                    </div>
                 </div>
+                <div class="align">
 
-                <span id="btn-sub-img" class="btn b-Shadow">
-                    <a href="https://www.market.flet.su/">
-                        Зарегистрироваться
-                    </a>
-                </span>
+                <a id="btn-sub-img" class="btn b-Shadow" href="https://www.market.flet.su/">
+                    Зарегистрироваться
+                </a>
+            </div>
             </section>
             <section id="automation">
                 <hgroup>
-                    <h2>Автоматизация вашего магазина, кафе, булочной</h2>
-                    <h3>Почему бизнес выбирает именно систему Флет</h3>
+                    <h2 class="title-medium">Автоматизация вашего магазина, кафе, булочной</h2>
+                    <h3 class="title-small">Почему бизнес выбирает именно систему Флет</h3>
                 </hgroup>
                 <section id="card-wrapper">
                     <div class="item">
@@ -124,7 +123,7 @@
                     <div class="item">
                         <img src="./img/3.svg" alt="">
                         <h4>Масштабируемость</h4>
-                        <p>Бизнес можно расширять в любом направлении и покарять горизонты: вводить новые товары и
+                        <p>Бизнес можно расширять в любом направлении и покорять новые горизонты: вводить новые товары и
                             услуги
                         </p>
                     </div>
@@ -133,8 +132,8 @@
 
                     <div class="itcss1">
                         <div class="itcss__wrapper">
-                            <div class="itcss__items">
-                                <div class="itcss__item">
+                            <div class="itcss__items" data-translate="-5" style="transform: translateX(0px);">
+                                <div class="itcss__item" data-order="0" data-index="0" data-translate="0">
                                     <div class="item">
                                         <img src="./img/1.svg" alt="">
                                         <h4>Работа 24/7</h4>
@@ -144,7 +143,7 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="itcss__item">
+                                <div class="itcss__item" data-order="1" data-index="1" data-translate="0">
                                     <div class="item">
                                         <img src="./img/2.svg" alt="">
                                         <h4>Узнаваемость</h4>
@@ -153,11 +152,13 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="itcss__item">
+                                <div class="itcss__item itcss__item_active" data-order="-1" data-index="2"
+                                    data-translate="-3" style="transform: translateX(0px);">
                                     <div class="item">
                                         <img src="./img/3.svg" alt="">
                                         <h4>Масштабируемость</h4>
-                                        <p>Бизнес можно расширять в любом направлении и покарять горизонты: вводить
+                                        <p>Бизнес можно расширять в любом направлении и покорять новые горизонты:
+                                            вводить
                                             новые товары и
                                             услуги
                                         </p>
@@ -165,14 +166,20 @@
                                 </div>
                             </div>
                         </div>
-                        <a style="fill: black;" class="itcss__control itcss__control_prev" href="#" role="button"
-                            data-slide="prev"></a>
-                        <a class="itcss__control itcss__control_next" href="#" role="button" data-slide="next"></a>
+                        <a style="fill: black;" class="itcss__control itcss__control_prev itcss__control_show" href="#"
+                            role="button" data-slide="prev"></a>
+                        <a class="itcss__control itcss__control_next itcss__control_show" href="#" role="button"
+                            data-slide="next"></a>
+                        <ol class="itcss__indicators">
+                            <li class="itcss__indicator" data-slide-to="0"></li>
+                            <li class="itcss__indicator" data-slide-to="1"></li>
+                            <li class="itcss__indicator itcss__indicator_active" data-slide-to="2"></li>
+                        </ol>
                     </div>
 
                 </section>
             </section>
-            <form action="">
+            <form>
                 <h3>Ваш конкурент уже успешно работает с ситемой Флет</h3>
                 <h2>Чего вы ждете?<br>
                     Присоединяйтесь!
@@ -193,7 +200,7 @@
                 </div>
                 <div class="form-footer">
                     <p>
-                        Нажимая кнопку Отправить заявку,
+                        Нажимая кнопку "Отправить заявку",
                         Вы даете согласие на получение сервисных
                         и рекламных сообщений о Программном обеспечении
                         Оператора и продуктах/услугах его Партнеров, согласие
@@ -209,29 +216,34 @@
                 </div>
             </form>
             <section id="knowledge-base">
-                <div>
-                    <h2 class="h2-title">База знаний. Как работать с системой Флет</h2>
-                    <p>
-                        Посмотрите короткие видео инструкции о работе системы,
-                        о том, как пройти регистрацию, ввести данные,
-                        заполнить товары и многое другое
-                    </p>
-                    <div id="know-btn">
-                        <a href="https://market-api.flet.su/api/print/help"><span class="btn b-Shadow">Смотреть
-                                инструкции</span>
-                        </a>
-                    </div>
+                <h2 class="h2-title title-medium">База знаний. Как работать с системой Флет</h2>
+                <div id="knowledge-content">
+                    <span>
+                        <p class="title-small">
+                            Посмотрите короткие видеоинструкции о работе системы,
+                            о том, как пройти регистрацию, ввести данные,
+                            заполнить товары и многое другое
+                        </p>
+                        <div id="know-btn">
+                            <a href="https://market-api.flet.su/api/print/help"><span class="btn b-Shadow">Смотреть
+                                    инструкции</span>
+                            </a>
+                        </div>
+                    </span>
+                    <img src="./img/question.svg" alt="">
                 </div>
-                <img src="./img/4.svg" alt="">
+                <a id="know-btn2" href="https://market-api.flet.su/api/print/help" class="btn b-Shadow">Смотреть
+                    инструкции
+                </a>
             </section>
             <section id="tariffs">
                 <hgroup>
-                    <h2>Тарифные планы</h2>
-                    <h3>Оптимально для бизнеса любого масштаба</h3>
+                    <h2 class="title-medium">Тарифные планы</h2>
+                    <h3 class="title-small">Оптимально для бизнеса любого масштаба</h3>
                 </hgroup>
                 <div id="card-container__items">
                     <div class="card-container__item">
-                        <h3>&#171;Легче лёгкого&#187;</h3>
+                        <h3>«Легче лёгкого»</h3>
                         <p class="big-text">0 р./м.</p>
                         <span style="width: 212px; height: 19px;"></span>
                         <p class="card-description">
@@ -243,7 +255,7 @@
                         </p>
                     </div>
                     <div class="card-container__item">
-                        <h3>&#171;С нами надолго&#187;</h3>
+                        <h3>«С нами надолго»</h3>
                         <p class="big-text">1 800 р./м.</p>
                         <span>при оплате за 12 месяцев</span>
                         <p class="card-description">
@@ -259,10 +271,10 @@
                 <!-- Слайдер -->
                 <div class="itcss2">
                     <div class="itcss__wrapper">
-                        <div class="itcss__items">
-                            <div class="itcss__item">
+                        <div class="itcss__items" data-translate="-5" style="transform: translateX(0px);">
+                            <div class="itcss__item" data-order="0" data-index="0" data-translate="0">
                                 <div class="card-container__item">
-                                    <h3>&#171;Легче лёгкого&#187;</h3>
+                                    <h3>«Легче лёгкого»</h3>
                                     <p class="big-text">0 р./м.</p>
                                     <span style="width: 212px; height: 19px;"></span>
                                     <p class="card-description">
@@ -274,9 +286,10 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="itcss__item">
+                            <div class="itcss__item itcss__item_active" data-order="-1" data-index="1"
+                                data-translate="-2" style="transform: translateX(0px);">
                                 <div class="card-container__item">
-                                    <h3>&#171;С нами надолго&#187;</h3>
+                                    <h3>«С нами надолго»</h3>
                                     <p class="big-text">1 800 р./м.</p>
                                     <span>при оплате за 12 месяцев</span>
                                     <p class="card-description">
@@ -290,9 +303,14 @@
                             </div>
                         </div>
                     </div>
-                    <a style="fill: black;" class="itcss__control itcss__control_prev" href="#" role="button"
-                        data-slide="prev"></a>
-                    <a class="itcss__control itcss__control_next" href="#" role="button" data-slide="next"></a>
+                    <a style="fill: black;" class="itcss__control itcss__control_prev itcss__control_show" href="#"
+                        role="button" data-slide="prev"></a>
+                    <a class="itcss__control itcss__control_next itcss__control_show" href="#" role="button"
+                        data-slide="next"></a>
+                    <ol class="itcss__indicators">
+                        <li class="itcss__indicator" data-slide-to="0"></li>
+                        <li class="itcss__indicator itcss__indicator_active" data-slide-to="1"></li>
+                    </ol>
                 </div>
                 <!-- Слайдер -->
 
@@ -305,14 +323,14 @@
                     <li>Добавление фотографий к модификациям товара</li>
                     <li>Возможность ввода нескольких модификаций для одного товара, например, по размеру, весу, цвету
                         или по другим характеристикам</li>
-                    <li>Изменение статуса товара, отображение автоматически в соответствии с остатками
+                    <li>Изменение статуса товара, отображение автоматически в соответствии с остатками.
                         Учет количества товара на складе</li>
-                    <li>Накопительные бонусы, скидки по сумме заказов, оплата бонусами
+                    <li>Накопительные бонусы, скидки по сумме заказов, оплата бонусами.
                         Выбор способов и времени доставки</li>
                     <li>Бесплатные обновления</li>
                     <li>Настройка прав доступа</li>
-                    <li>Круглосуточный мониторинг серверов и сервисов, обеспечивающих работу вашего приложения и админ
-                        панели</li>
+                    <li>Круглосуточный мониторинг серверов и сервисов, обеспечивающих работу вашего приложения и
+                        админ-панели</li>
                 </ul>
             </section>
             <form action="#">
@@ -336,7 +354,7 @@
                 </div>
                 <div class="form-footer">
                     <p>
-                        Нажимая кнопку Отправить заявку,
+                        Нажимая кнопку "Отправить заявку",
                         Вы даете согласие на получение сервисных
                         и рекламных сообщений о Программном обеспечении
                         Оператора и продуктах/услугах его Партнеров, согласие
@@ -352,7 +370,7 @@
                 </div>
             </form>
             <footer>
-                <h2>Связаться с нами можно</h2>
+                <h2 class="title-medium">Связаться с нами можно</h2>
                 <address>
                     <div class="address-content__item">
                         <p>Телефон</p>
@@ -364,13 +382,13 @@
                     <div class="address-content__item">
                         <p>e-mail</p>
                         <p>
-                            <a href="mailto:mail@flet.su?subject =Тема сообщения">
+                            <a href="mailto:mail@flet.su?subject=Тема сообщения">
                                 mail@flet.su
                             </a>
                         </p>
                     </div>
                     <div class="address-content__item">
-                        <p>Адресс</p>
+                        <p>Адрес</p>
                         <p>
                             <a>
                                 г. Волжский, ул. Ленина, 308Ж, оф. 14
@@ -382,6 +400,12 @@
             </footer>
         </main>
     </main>
+
+
+    <script src="./script/index.js"></script>
+    <script src="./script/simple-adaptive-slider.js"></script>
+    <script src="./script/burger.js"></script>
+
 </body>
 
 <script src="./script/index.js"></script>
