@@ -267,9 +267,11 @@ header div {
     display: flex;
     justify-content: space-between;
 }
+
 #mobile-app h1 {
     font-size: 80px;
 }
+
 #mobile-app h1,
 #mobile-app h2 {
     font-weight: 600;
@@ -288,7 +290,7 @@ header div {
     width: 100%;
     margin-bottom: 54px;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 1.5;
 }
 
 /* Блок автоматизация  */
@@ -297,7 +299,6 @@ header div {
 }
 
 .title-small {
-    margin-top: 10px;
     font-size: 24px;
     font-weight: 300;
     text-align: start;
@@ -436,7 +437,7 @@ form button {
 .form-footer p {
     font-size: 18px;
     width: 653px;
-    line-height: 30px;
+    line-height: 1.5;
 
 }
 
@@ -512,14 +513,19 @@ button.b-Shadow,
 #tariffs {
     margin-top: 135px;
 }
-.title-medium{
+
+.title-medium {
     font-size: 40px;
     font-weight: bold;
 }
+
 .title-small {
-font-size: 24px;
+    font-size: 24px;
 }
-.title-medium, .title-small{
+
+.title-medium,
+.title-small {
+    line-height: 1.5;
     text-align: start;
 }
 
@@ -571,7 +577,7 @@ font-size: 24px;
     line-height: 1.5;
 }
 
-#tariffs #h3-include {
+#h3-include {
     text-align: start;
     margin-top: 93px;
     margin-bottom: 52px;
@@ -580,6 +586,7 @@ font-size: 24px;
 #tariffs li {
     font-size: 20px;
     margin-bottom: 27px;
+    line-height: 1.5;
 }
 
 #tariffs li::before {
@@ -597,9 +604,11 @@ footer {
     margin-top: 149px;
     padding-bottom: 44px;
 }
+
 footer {
     line-height: 3;
 }
+
 address {
     display: flex;
     flex-wrap: wrap;
@@ -617,7 +626,6 @@ address p:nth-child(1) {
 
 address p:nth-child(2) {
     font-weight: 900;
-    font-size: 24px;
 }
 
 small {
@@ -811,10 +819,6 @@ small {
         height: 450px;
     }
 
-    #knowledge-base p {
-        max-width: none;
-        text-align: justify;
-    }
 }
 
 @media screen and (max-width: 1160px) {
@@ -888,7 +892,6 @@ small {
         margin-top: 30px;
     }
 
-    /*  */
     .itcss1,
     .itcss2 {
         display: flex;
@@ -929,7 +932,7 @@ small {
         width: 100%;
     }
 
-    footer h2 {
+    footer .title-medium {
         text-align: center;
     }
 
@@ -1001,6 +1004,10 @@ small {
 }
 
 @media screen and (max-width: 960px) {
+    #tariffs .title-medium {
+        margin-top: 30px;
+    }
+
     #phone {
         margin-top: 30px;
     }
@@ -1087,13 +1094,17 @@ small {
     #mobile-app h1 {
         font-size: 36px
     }
+
     #mobile-app h2 {
         font-size: 24px;
     }
-    #mobile-app-block__subtitle{
+
+    #mobile-app-block__subtitle {
         margin: 0;
         margin-top: 20px;
+        font-size: 16px;
     }
+
     .glo {
         font-size: 10px;
     }
@@ -1116,9 +1127,10 @@ small {
     #tariffs li,
     form h3 {
         font-size: 16px;
-        line-height: normal;
     }
-
+    .title-medium {
+        font-size: 24px;
+    }
     form h3 {
         margin-bottom: 10px;
     }
@@ -1195,7 +1207,7 @@ small {
         transform: scale(.8);
     }
 
-    #tariffs #h3-include {
+    #h3-include {
         margin-top: 0px;
         margin-bottom: 30px;
     }
@@ -1203,6 +1215,7 @@ small {
     #tariffs {
         padding: 0px;
     }
+    
 
     .itcss2 .itcss__wrapper {
         padding: 0;
@@ -1233,8 +1246,7 @@ small {
         font-weight: 400;
     }
 
-    address p:nth-child(1) {
-    }
+    address p:nth-child(1) {}
 
     address {
         padding-top: 30px;
@@ -1242,14 +1254,6 @@ small {
 
     address>div {
         margin-top: 15px;
-    }
-
-    form h3 {
-        font-size: 20px;
-    }
-
-    form h2 {
-        font-size: 30px;
     }
 
     .card-container__item {
@@ -1273,9 +1277,6 @@ small {
         height: 280px;
     }
 
-    #mobile-app {
-    }
-
     #mobile-app-block {
         margin-top: 0px;
     }
@@ -1285,12 +1286,13 @@ small {
     }
 
     #mobile-app h2 {
+        margin-top: 10px;
         font-size: 19px;
     }
 
     #mobile-app-block__subtitle {
         font-size: 12px;
-        margin: 0;
+        margin: 10px;
     }
 
     #btn-sub-img {
@@ -1300,16 +1302,21 @@ small {
     .title-medium {
         font-size: 16px;
     }
-    .title-small{
+
+    .title-small {
         font-size: 12px;
         margin: 0;
     }
-    .title-small, .title-medium{
-    } 
-    
+
 }
 
 @media screen and (max-width: 420px) {
+    #phone {
+        transform: scale(.6);
+    }
+    #h3-include {
+        font-size: 16px;
+    }
 
     .btn {
         padding: 9px;
@@ -1440,17 +1447,12 @@ small {
 
     form button {
         margin-top: 41px;
-        width: 152px;
         height: 36px;
         font-size: 12px;
     }
 
-    #knowledge-base p {
-    }
-
     .h2-title {
         font-size: 16px;
-
     }
 
     #knowledge-base {
@@ -1489,7 +1491,14 @@ small {
     #tariffs hgroup h3 {
         text-align: center;
     }
-
+    #tariffs li {
+        margin-bottom: 8px;
+        font-size: 10px;
+    }
+    #tariffs li::before {
+    width: 8px;
+    height: 8px;
+    }
     #tariffs hgroup h2 {
         font-size: 16px;
     }
@@ -1510,17 +1519,20 @@ small {
     footer h2 {
         font-size: 16px;
     }
-
+    
     address p:nth-child(1) {
         font-size: 12px;
     }
-
+    address > div {
+        margin-top: 0;
+    }
     footer p a,
     footer p {
         font-size: 10px;
     }
 
     address p:nth-child(2) {
+        font-size: none;
     }
 
     small {
