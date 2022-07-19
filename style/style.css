@@ -516,22 +516,29 @@ button.b-Shadow,
     position: relative;
 }
 
-#tariffs img,
-#tariffs img {
+#cloud-tr,
+#rocket-tr {
     position: absolute;
-}
-
-#rocket-bl {
-    bottom: 0;
-    right: 0;
-}
-#cloud-bl {
-    transform: scale(1.5);
-    right: 20%;
-}
-#tariffs #rocket {
     top: 0;
     right: 0;
+}
+
+#cloud-tr2 {
+    width: 119px;
+    position: absolute;
+    right: 0;
+    bottom: -150px;
+}
+
+#cloud-tr {
+    top: -100px;
+    width: 426px;
+    right: 20%;
+}
+
+#rocket-tr {
+    top: 250px;
+    width: 427px;
 }
 
 .title-medium {
@@ -662,10 +669,37 @@ small {
     --form-el-mt: 0px
 }
 
-@media screen and (max-width: 1663px) {
-#rocket-bl{
-    transform: scale(.9);
+@media screen and (max-width: 1770px) {
+    #rocket-tr {
+        top: 300px;
+        max-width: 263px;
+    }
+
+    #cloud-tr2 {
+        bottom: -50px
+    }
+
+    #cloud-tr {
+        width: 365px;
+    }
 }
+
+@media screen and (max-width: 1550px) {
+    #cloud-tr {
+        display: none;
+    }
+
+    #rocket-tr {
+        right: 100px;
+        top: -150px;
+    }
+
+    #cloud-tr2 {
+        position: absolute;
+        right: 0;
+        top: 100px;
+        display: block;
+    }
 }
 
 @media screen and (max-width: 1466px) {
@@ -690,6 +724,14 @@ small {
 }
 
 @media screen and (max-width: 1290px) {
+    #rocket-tr {
+        display: none;
+    }
+
+    #cloud-tr2 {
+        display: none;
+    }
+
     #phone {
         width: 509px;
         height: 450px;
@@ -704,8 +746,6 @@ small {
 
     #cloudbig {
         width: 197px;
-        height: 132px;
-
     }
 
     #sub-mobile {
@@ -812,7 +852,6 @@ small {
     #mobile-app {
         flex-direction: column;
     }
-
 
     #card-container__items {
         flex-wrap: wrap;
@@ -948,6 +987,7 @@ small {
     }
 
     #card-wrapper .item {
+        text-align: center;
         width: 100%;
         margin: 0px;
     }
@@ -1301,6 +1341,14 @@ small {
 }
 
 @media screen and (max-width: 450px) {
+    #cloudbig {
+        transform: translate(-50%, 20%);
+    }
+
+    #cloudmin {
+        transform: translate(20%, -50%);
+    }
+
     #phone {
         margin-top: 0px;
         transform: scale(.7);
