@@ -1545,13 +1545,14 @@ small {
     }
 
     #knowledge-base img {
-        width: 288px;
-        height: 235px;
         margin-bottom: 0px;
+        width: 240px;
+        height: 240px;
     }
 
+
     #knowledge-base .btn {
-        margin: 20px auto 0px auto;
+        margin: 0 auto;
         font-size: 12px;
         padding: 9px 8px;
     }
