@@ -42,10 +42,61 @@ body {
     line-height: auto;
     font-size: 20px;
 }
-
-.itcss1 {
-    display: none;
+/* Слайдер 1 */
+.slider {
+    width: 50%;
+    margin: 100px auto;
 }
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 255px;
+    margin: 0 auto;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+
+
+.slick-slide {
+    transition: all ease-in-out .3s;
+}
+
+.slick-active {
+}
+
+.slick-current {
+    opacity: 1;
+}
+
+.slide {
+    width: 100%;
+
+}
+
+.slide img {
+    width: 250px;
+    height: 255px;
+}
+
+.slide h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.slide p {
+    font-size: 18px;
+    max-width: 343px;
+    width: 100%;
+    line-height: 2;
+    text-align: justify;
+}
+
 
 .itcss2 {
     display: none;
@@ -259,6 +310,10 @@ header div {
     margin-top: 15px;
 }
 
+#mobile-app-block span {
+    white-space: nowrap;
+}
+
 #sub-mobile {
     display: flex;
     justify-content: space-between;
@@ -275,6 +330,7 @@ header div {
 
 
 #mobile-app h2,
+#mobile-app-block span,
 #fees-size {
     width: 100%;
     font-size: 60px;
@@ -992,10 +1048,6 @@ small {
         margin: 0px;
     }
 
-    #card-wrapper p {
-        width: 100%;
-    }
-
     footer .title-medium {
         text-align: center;
     }
@@ -1006,59 +1058,6 @@ small {
     }
 }
 
-/* @media screen and (max-width: 1100px) {
-
-    .itcss1,
-    .itcss2 {
-        display: flex;
-    }
-
-    form {
-        margin-top: 30px;
-    }
-
-    #card-wrapper {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #card-wrapper>.item {
-        display: none;
-    }
-
-    #card-wrapper div:nth-child(2),
-    #card-wrapper div:nth-child(3) {
-        margin-left: 0px;
-    }
-
-    .slider-wrapper {
-        display: block;
-    }
-
-    #automation h4 {
-        text-align: center;
-    }
-
-    #card-wrapper .item {
-        width: 100%;
-        margin: 0px;
-    }
-
-    #card-wrapper p {
-        width: 100%;
-    }
-
-    footer h2 {
-        text-align: center;
-    }
-
-    address {
-        flex-direction: column;
-
-    }
-
-
-} */
 
 @media screen and (max-width: 1024px) {
     #card-wrapper {
@@ -1158,7 +1157,11 @@ small {
 }
 
 @media screen and (max-width: 860px) {
-
+    .slide p {
+        font-size: 16px;
+        width: 100%;
+        max-width: none;
+    }
     #mobile-app h1 {
         font-size: 36px
     }

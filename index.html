@@ -20,8 +20,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/style.css">
-
     <link rel="stylesheet" href="style/simple-adaptive-slider.css">
+    <link rel="stylesheet" href="style/slick-theme.css">
+    <link rel="stylesheet" href="style/slick.css">
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
         (function (m, e, t, r, i, k, a) {
@@ -79,7 +80,7 @@
                 <h1>Мобильное приложение</h1>
                 <div id="sub-mobile">
                     <div id="mobile-app-block">
-                        <h2>для бизнеса любого размера за 0 руб./мес</h2>
+                        <h2>для бизнеса любого размера за <span>0&nbsp;₽/м.</span></h2>
                         <p id="mobile-app-block__subtitle">
                             Ваше мобильное приложе­ние
                             для магазина, ресторана, кафе,<br> булочной. Вообще для любого бизнеса
@@ -91,7 +92,7 @@
                     <!-- <img src="./img/main.svg" alt="1"> -->
                     <div id="phone">
                         <img id="cloudmin" src="./img/cloud.png" alt="маленькое облачко">
-                        <img id="cloudbig" src='../img/cloud.png' alt="">
+                        <img id="cloudbig" src='./img/cloud.png' alt="">
                     </div>
                 </div>
                 <div class="align">
@@ -106,77 +107,69 @@
                     <h2 class="title-medium">Автоматизация вашего магазина, кафе, булочной</h2>
                     <h3 class="title-small">Почему бизнес выбирает именно систему Флет</h3>
                 </hgroup>
-                <section id="card-wrapper">
-                    <div class="item">
-                        <img src="./img/1.svg" alt="">
-                        <h4>Работа 24/7</h4>
-                        <p>Круглосуточная и бесперебойная работа вашего бизнеса в онлайн благодаря доступности
-                            приложения
+                <!-- СЛАЙДЕР -->
+                <section class="multiple-items slide">
+                    <div>
+                        <img src="./img/slider/1.svg" alt="">
+                        <h3>Визуализация вашего товара</h3>
+                        <p>Если бы у "ДОДО", "Озон" и других крупных игроков на рынке не было мобильного приложения,
+                            вы бы о них даже и не знали. У них не было бы такой капитализации и такого количества
+                            клиентов</p>
+                    </div>
+                    <div>
+                        <img src="./img/slider/2.svg" alt="">
+                        <h3>Контроль остатков и других процессов </h3>
+                        <p>Закончился товар? Он сразу исчез из приложения. Сборка, перемещения товаров, передача
+                            товара покупателю путем чтения qr кодов встроенным модулем в мобильные приложения. Все
+                            это исключает путаницу</p>
+                    </div>
+                    <div>
+                        <img src="./img/slider/3.svg" alt="">
+                        <h3>Никакой аренды</h3>
+                        <p>Нет необходимости открывать новые точки продаж и нанимать сотрудников. Приложение все
+                            сделает за вас: расскажет клиенту про товар, примет оплату и назначит доставку к
+                            указанному времени
                         </p>
                     </div>
-                    <div class="item">
-                        <img src="./img/2.svg" alt="">
-                        <h4>Узнаваемость</h4>
-                        <p>Ваше приложение будет узнаваемым, а бизнес резко выделяться на фоне конкурентов
+                    <div>
+                        <img src="./img/slider/4.svg" alt="">
+                        <h3>Минимальная квалификация ваших работников</h3>
+                        <p>Вся работа на любом из отрезков процесса заключается в выполнении действий, указанных в
+                            мобильных приложениях
                         </p>
                     </div>
-                    <div class="item">
-                        <img src="./img/3.svg" alt="">
-                        <h4>Масштабируемость</h4>
-                        <p>Бизнес можно расширять в любом направлении и покорять новые горизонты: вводить новые товары и
-                            услуги
+                    <div>
+                        <img src="./img/slider/5.svg" alt="">
+                        <h3>Лояльность клиентов</h3>
+                        <p>Возможность сообщать клиентам о новинках, акциях, конкурсах и т.д. (пуш уведомления,
+                            сообщения на эл. почту)
+                            Бонусные программы, % скидки, настраиваемое время проведения акции
                         </p>
                     </div>
-
-                    <!-- СЛАЙДЕР -->
-
-                    <div class="itcss1">
-                        <div class="itcss__wrapper">
-                            <div class="itcss__items" data-translate="-5" style="transform: translateX(0px);">
-                                <div class="itcss__item" data-order="0" data-index="0" data-translate="0">
-                                    <div class="item">
-                                        <img src="./img/1.svg" alt="">
-                                        <h4>Работа 24/7</h4>
-                                        <p>Круглосуточная и бесперебойная работа вашего бизнеса в онлайн благодаря
-                                            доступности
-                                            приложения
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="itcss__item" data-order="1" data-index="1" data-translate="0">
-                                    <div class="item">
-                                        <img src="./img/2.svg" alt="">
-                                        <h4>Узнаваемость</h4>
-                                        <p>Ваше приложение будет узнаваемым, а бизнес резко выделяться на фоне
-                                            конкурентов
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="itcss__item itcss__item_active" data-order="-1" data-index="2"
-                                    data-translate="-3" style="transform: translateX(0px);">
-                                    <div class="item">
-                                        <img src="./img/3.svg" alt="">
-                                        <h4>Масштабируемость</h4>
-                                        <p>Бизнес можно расширять в любом направлении и покорять новые горизонты:
-                                            вводить
-                                            новые товары и
-                                            услуги
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <a style="fill: black;" class="itcss__control itcss__control_prev itcss__control_show" href="#"
-                            role="button" data-slide="prev"></a>
-                        <a class="itcss__control itcss__control_next itcss__control_show" href="#" role="button"
-                            data-slide="next"></a>
-                        <ol class="itcss__indicators">
-                            <li class="itcss__indicator" data-slide-to="0"></li>
-                            <li class="itcss__indicator" data-slide-to="1"></li>
-                            <li class="itcss__indicator itcss__indicator_active" data-slide-to="2"></li>
-                        </ol>
+                    <div>
+                        <img src="./img/slider/6.svg" alt="">
+                        <h3>выбор территории</h3>
+                        <p>
+                            Определите зону, где вы работаете и производите доставку. Так ложные заказы будут точно
+                            исключены
+                        </p>
                     </div>
-
+                    <div>
+                        <img src="./img/slider/7.svg" alt="">
+                        <h3>Работа 24/7</h3>
+                        <p>
+                            Круглосуточная продажа товаров и услуг. Без перерыва на обед и выходные. Приложение
+                            работает всегда - товар продается всегда!
+                        </p>
+                    </div>
+                    <div>
+                        <img src="./img/slider/8.svg" alt="">
+                        <h3>Платят как удобно</h3>
+                        <p>
+                            Предусмотрены варианты оплаты: наличный расчет, безналичный расчет в мобильном
+                            приложении, безналичный расчет курьеру эквайринг
+                        </p>
+                    </div>
                 </section>
             </section>
             <form>
@@ -246,7 +239,7 @@
                 <div id="card-container__items">
                     <div class="card-container__item">
                         <h3>«Легче лёгкого»</h3>
-                        <p class="big-text">0 р./м.</p>
+                        <p class="big-text">0&nbsp;₽/м.</p>
                         <span style="width: 212px; height: 19px;"></span>
                         <p class="card-description">
                             + Комиссия с продаж за пользование платформой Флет 7% <br>
@@ -258,8 +251,8 @@
                     </div>
                     <div class="card-container__item">
                         <h3>«С нами надолго»</h3>
-                        <p class="big-text">1 800 р./м.</p>
-                        <span>при оплате за 12 месяцев</span>
+                        <p class="big-text">1&nbsp;800&nbsp;₽/м.</p>
+                        <span>при оплате за 12&nbsp;месяцев</span>
                         <p class="card-description">
                             + Комиссия с продаж за пользование платформой Флет 1%<br>
                             + Публикация мобильного
@@ -277,7 +270,7 @@
                             <div class="itcss__item" data-order="0" data-index="0" data-translate="0">
                                 <div class="card-container__item">
                                     <h3>«Легче лёгкого»</h3>
-                                    <p class="big-text">0 р./м.</p>
+                                    <p class="big-text">0&nbsp;₽/м.</p>
                                     <span style="width: 212px; height: 19px;"></span>
                                     <p class="card-description">
                                         + Комиссия с продаж за пользование платформой Флет 7% <br>
@@ -292,8 +285,8 @@
                                 data-translate="-2" style="transform: translateX(0px);">
                                 <div class="card-container__item">
                                     <h3>«С нами надолго»</h3>
-                                    <p class="big-text">1 800 р./м.</p>
-                                    <span>при оплате за 12 месяцев</span>
+                                    <p class="big-text">1&nbsp;800&nbsp;₽/м.</p>
+                                    <span>при оплате за 12&nbsp;месяцев</span>
                                     <p class="card-description">
                                         + Комиссия с продаж за пользование платформой Флет 1%<br>
                                         + Публикация мобильного
@@ -323,7 +316,7 @@
                     <img id="cloud-tr2" src="./img/cloud.png" alt="облако">
                     <li>Использование мобильных приложений «Флет Курьер» и «Флет Склад» </li>
                     <li>Максимальное количество товаров - 5000 </li>
-                    <li>Дисковое пространство - 5 Гб</li>
+                    <li>Дисковое пространство - 5&nbsp;Гб</li>
                     <li>Удобная система редактирования ассортимента магазина</li>
                     <li>Добавление фотографий к модификациям товара</li>
                     <li>Возможность ввода нескольких модификаций для одного товара, например, по размеру, весу, цвету
@@ -381,7 +374,7 @@
                         <p>Телефон</p>
                         <p>
                             <a href="tel:+79044089494">
-                                +7 904 408 94 94 </a>
+                                +7&nbsp;904&nbsp;408&nbsp;94&nbsp;94 </a>
                         </p>
                     </div>
                     <div class="address-content__item">
@@ -406,15 +399,37 @@
         </main>
     </main>
 
-
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="script/slick.min.js"></script>
     <script src="./script/index.js"></script>
     <script src="./script/simple-adaptive-slider.js"></script>
     <script src="./script/burger.js"></script>
-
+    <script type="text/javascript">
+        $('.multiple-items').slick({
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            responsive: [
+                {
+                    breakpoint: 1440,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                    }
+                },
+                {
+                    breakpoint: 840,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                    }
+                },
+            ]
+        });
+    </script>
 </body>
 
-<script src="./script/index.js"></script>
-<script src="./script/simple-adaptive-slider.js"></script>
-<script src="./script/burger.js"></script>
 
 </html>
