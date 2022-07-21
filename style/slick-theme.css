@@ -166,7 +166,8 @@
 }
 
 .slick-dots li button:hover,
-.slick-dots li button:focus {}
+.slick-dots li button:focus {
+}
 
 .slick-dots li button:hover:before,
 .slick-dots li button:focus:before {
@@ -198,4 +199,13 @@
 .slick-dots li.slick-active button:before {
     opacity: .75;
     color: black;
+}
+@media screen and (max-width: 490px){
+    .slick-prev {
+        left: 0;
+    }
+    .slick-next {
+        right: 0;
+    }
+    
 }
