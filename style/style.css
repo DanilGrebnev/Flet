@@ -42,6 +42,7 @@ body {
     line-height: auto;
     font-size: 20px;
 }
+
 /* Слайдер 1 */
 .slider {
     width: 50%;
@@ -67,8 +68,7 @@ body {
     transition: all ease-in-out .3s;
 }
 
-.slick-active {
-}
+.slick-active {}
 
 .slick-current {
     opacity: 1;
@@ -611,7 +611,8 @@ button.b-Shadow,
 .title-medium,
 .title-small {
     line-height: 1.5;
-    text-align: start;
+    text-align: center;
+    font-weight: bold;
 }
 
 #card-container__items {
@@ -1069,6 +1070,9 @@ small {
 }
 
 @media screen and (max-width: 960px) {
+
+
+
     #tariffs .title-medium {
         margin-top: 30px;
     }
@@ -1132,10 +1136,6 @@ small {
         justify-content: space-around;
     }
 
-    form {
-        margin-top: 50px;
-    }
-
     #know-btn {
         display: none;
     }
@@ -1164,11 +1164,13 @@ small {
         width: 100%;
         max-width: none;
     }
+
     #mobile-app h1 {
         font-size: 36px
     }
 
-    #mobile-app h2 {
+    #mobile-app h2,
+    #mobile-app span {
         font-size: 24px;
     }
 
@@ -1274,6 +1276,11 @@ small {
 
 @media screen and (max-width: 640px) {
 
+    .title-medium,
+    .title-small {
+        text-align: start;
+    }
+
     #tariffs h2 {
         margin-bottom: 0px;
     }
@@ -1346,6 +1353,7 @@ small {
 }
 
 @media screen and (max-width: 450px) {
+    
     #cloudbig {
         transform: translate(-50%, 20%);
     }
@@ -1368,7 +1376,7 @@ small {
         font-size: 21px;
     }
 
-    #mobile-app h2 {
+    #mobile-app h2, #mobile-app span {
         margin-top: 10px;
         font-size: 19px;
     }
