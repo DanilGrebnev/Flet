@@ -78,7 +78,9 @@ body {
     width: 100%;
 
 }
-
+.multiple-items{
+    margin-top: 50px;
+}
 .slide img {
     max-width: 250px;
     width: 100%;
@@ -86,17 +88,20 @@ body {
 }
 
 .slide h3 {
+    text-align: start;
     line-height: 1.5;
     font-size: 20px;
     font-weight: bold;
 }
 
 .slide p {
+    display: block;
+    margin: 0 auto;
     font-size: 18px;
     max-width: 343px;
     width: 100%;
     line-height: 2;
-    text-align: justify;
+    text-align: start;
 }
 
 
@@ -611,6 +616,12 @@ button.b-Shadow,
 .title-medium,
 .title-small {
     line-height: 1.5;
+    text-align: start;
+}
+
+#tariffs .title-medium,
+#tariffs .title-small {
+    line-height: 1.5;
     text-align: center;
     font-weight: bold;
 }
@@ -670,19 +681,26 @@ button.b-Shadow,
 }
 
 #tariffs li {
+    margin-left: 16px;
+    padding-left: 16px;
+    position: relative;
     font-size: 20px;
     margin-bottom: 27px;
     line-height: 1.5;
 }
 
 #tariffs li::before {
+    position: absolute;
+    left: -16px;
+    top: 17%;
     content: "";
     width: 13px;
     height: 13px;
     display: inline-block;
     border-radius: 50%;
     background: var(--li);
-    margin-right: 16px;
+
+    /* margin-right: 16px; */
 }
 
 /* Футер */
@@ -843,6 +861,13 @@ small {
 }
 
 @media screen and (max-width: 1200px) {
+    .slide p {
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
     #phone {
         margin: 0 auto;
         width: 400px;
@@ -1020,7 +1045,7 @@ small {
     }
 
     form {
-        margin-top: 30px;
+        /* margin-top: 30px; */
     }
 
     #card-wrapper {
@@ -1070,7 +1095,9 @@ small {
 }
 
 @media screen and (max-width: 960px) {
-
+    form {
+        margin-top: 30px;
+    }
 
 
     #tariffs .title-medium {
@@ -1102,7 +1129,7 @@ small {
     }
 
     form {
-        padding: 30px;
+        /* padding: 30px; */
     }
 
     .inp-items .inp-item:nth-child(3) {
@@ -1353,7 +1380,7 @@ small {
 }
 
 @media screen and (max-width: 450px) {
-    
+
     #cloudbig {
         transform: translate(-50%, 20%);
     }
@@ -1376,7 +1403,8 @@ small {
         font-size: 21px;
     }
 
-    #mobile-app h2, #mobile-app span {
+    #mobile-app h2,
+    #mobile-app span {
         margin-top: 10px;
         font-size: 19px;
     }
