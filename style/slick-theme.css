@@ -200,3 +200,8 @@
     }
     
 }
+@media screen and (max-width: 440px){
+    .slick-prev, .slick-next{
+        top: 30%;
+    }
+}
