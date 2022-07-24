@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @charset 'UTF-8';
 
 
@@ -64,7 +71,9 @@
 .slick-prev {
     left: -25px;
     background-image: url('../img/arrow.svg');
-    transform: translateX(0%) rotate(180deg) translateY(50%);
+    -webkit-transform: translateX(0%) rotate(180deg) translateY(50%);
+        -ms-transform: translateX(0%) rotate(180deg) translateY(50%);
+            transform: translateX(0%) rotate(180deg) translateY(50%);
 
 }
 
