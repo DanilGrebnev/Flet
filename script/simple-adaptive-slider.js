@@ -5,7 +5,7 @@
  */
  document.addEventListener('DOMContentLoaded', function () {
   // инициализация слайдера
-  var slider = new ItcSimpleSlider('.itcss2', {
+  new ItcSimpleSlider('.itcss2', {
     loop: true,
     autoplay: true,
     swipe: true

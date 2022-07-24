@@ -42,10 +42,3 @@ document.addEventListener('click', e => {
     }
 
 })
-
-
-
-
-
-
-
