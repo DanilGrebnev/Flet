@@ -676,7 +676,7 @@ button.b-Shadow,
 
 /* Блог с тарифами */
 #tariffs {
-    margin-top: 135px;
+    margin-top: 0px;
 }
 
 #tariffs ul {
@@ -1631,7 +1631,6 @@ small {
     }
     .slick-slide p{
         font-size: 12px;
-        line-height: normal;
     }
     form {
         padding: 30px;
