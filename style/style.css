@@ -91,7 +91,7 @@ body {
     opacity: 1;
 }
 
-.slide {
+.slick-slide {
     width: 100%;
 
 }
@@ -100,20 +100,20 @@ body {
     margin-top: 50px;
 }
 
-.slide img {
+.slick-slide img {
     max-width: 250px;
     width: 100%;
     height: 255px;
 }
 
-.slide h3 {
+.slick-slide h3 {
     text-align: start;
     line-height: 1.5;
     font-size: 20px;
     font-weight: bold;
 }
 
-.slide p {
+.slick-slide p {
     display: block;
     margin: 0 auto;
     font-size: 18px;
@@ -989,7 +989,7 @@ small {
 
 
 @media screen and (max-width: 1200px) {
-    .slide p {
+    .slick-slide p {
         line-height: 1.5;
     }
     form .form-footer p {
@@ -1392,10 +1392,10 @@ small {
         width: 300px;
         height: 300px;
     }
-    .slide h3 {
+    .slick-slide h3 {
         min-height: auto;
     }
-    .slide p {
+    .slick-slide p {
         font-size: 16px;
         width: 100%;
         max-width: none;
@@ -1523,11 +1523,11 @@ small {
 
 @media screen and (max-width: 640px) {
 
-    .slide h3 {
+    .slick-slide h3 {
         text-align: start;
     }
 
-    .slide p {
+    .slick-slide p {
         text-align: justify;
     }
 
