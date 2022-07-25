@@ -1007,7 +1007,7 @@ small {
     #cloudmin {
         -webkit-transform: translate(50%, -50%);
             -ms-transform: translate(50%, -50%);
-                transform: translate(50%, -50%);
+                transform: translate(130%, -50%);
     }
 
     #cloudbig {
@@ -1385,11 +1385,13 @@ small {
         width: 300px;
         height: 300px;
     }
+    .slide h3 {
+        min-height: auto;
+    }
     .slide p {
         font-size: 16px;
         width: 100%;
         max-width: none;
-
     }
 
     #mobile-app h1 {
