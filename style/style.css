@@ -62,6 +62,9 @@ body {
     font-weight: 400;
     line-height: auto;
     font-size: 20px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
 }
 
 /* Слайдер 1 */
@@ -412,7 +415,7 @@ header div {
 
 
 #mobile-app h2,
-#mobile-app-block span,
+#mobile-app-block h2 span,
 #fees-size {
     width: 100%;
     font-size: 60px;
@@ -563,10 +566,12 @@ form a {
 form button {
     color: var(--form-btn-txt);
     border: none;
-    display: inline-block;
+    display: inline;
     background: var(--form-btn);
     font-family: inherit;
     font-size: 20px;
+    height: min-content;
+    padding: 19px 34px;
 }
 
 .form-footer {
@@ -829,9 +834,11 @@ button.b-Shadow,
 footer {
     margin-top: 30px;
     padding-bottom: 44px;
-    line-height: 3;
+    line-height: 1.5;
 }
-
+.address-content__item{
+    margin-bottom: 20px;
+}
 footer h2 {
     margin-bottom: 30px;
 }
@@ -845,6 +852,7 @@ address {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    font-style: normal;
 }
 
 address p {
@@ -1119,7 +1127,7 @@ small {
 
 @media screen and (max-width: 1160px) {
     #main-wrapper {
-        padding-top: 80px
+        padding-top: 30px
     }
 
     header #burger {
@@ -1255,19 +1263,6 @@ small {
     }
 }
 
-
-@media screen and (max-width: 1024px) {
-    #card-wrapper {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-    }
-}
-
 @media screen and (max-width: 960px) {
     #cloudbig {
         width: 130px;
@@ -1294,7 +1289,7 @@ small {
     #cloudmin {
         -webkit-transform: translate(50%, -50%);
         -ms-transform: translate(50%, -50%);
-        transform: translate(80%, -50%);
+        transform: translate(50%, -80%);
     }
 
     #cloudbig {
@@ -1358,8 +1353,15 @@ small {
     #card-wrapper {
         -ms-flex-pack: distribute;
         justify-content: space-around;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
     }
-
+   
     #know-btn {
         display: none;
     }
@@ -1385,21 +1387,13 @@ small {
 
 }
 
-@media screen and (max-width: 860px) {
-    #main-wrapper {
-        padding-top: 30px;
-    }
-
-    .slick-slide img {
-        max-width: none;
-        width: 300px;
-        height: 300px;
-    }
-
+@media screen and (max-width: 861px) {
     .slick-slide h3 {
         min-height: auto;
     }
-
+    #phone{
+        margin-top: 60px;
+    }
     .slick-slide p.slide-desc {
         font-size: 16px;
         width: 100%;
@@ -1411,7 +1405,7 @@ small {
     }
 
     #mobile-app h2,
-    #mobile-app span {
+    #mobile-app h2 span {
         font-size: 24px;
     }
 
@@ -1487,7 +1481,6 @@ small {
         margin: 0 auto;
     }
 
-
 }
 
 @media screen and (max-width: 760px) {
@@ -1512,7 +1505,48 @@ small {
 
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 640px) {
+    
+    #main-wrapper {
+        padding-top: 30px;
+    }
+    #mobile-app h1 {
+        font-size: 25px;
+    }
+
+    #mobile-app h2,
+    #mobile-app span {
+        margin-top: 5px;
+        font-size: 24px;
+    }
+
+    .slick-slide h3 {
+        font-size: 20px;
+    }
+
+    #h3-include,
+    .title-medium,
+    form h2,
+    .card-description {
+        font-size: 21px;
+    }
+
+    #tariffs ul li,
+    .title-small,
+    form h3,
+    #mobile-app-block__subtitle,
+    .btn.b-Shadow,
+    button.b-Shadow,
+    .slick-slide p.slide-desc {
+        font-size: 16px;
+    }
+
+
+    .slick-slide img {
+        max-width: none;
+        width: 300px;
+        height: 300px;
+    }
     #card-wrapper {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -1523,11 +1557,6 @@ small {
         align-items: center;
         gap: 20px;
     }
-
-
-}
-
-@media screen and (max-width: 640px) {
 
     .slick-slide h3 {
         text-align: start;
@@ -1573,12 +1602,7 @@ small {
     }
 }
 
-/* iphone x, xr, xs, 11, 11 pro */
-@media only screen 
-    and (device-width: 414px) 
-    and (device-height: 896px) 
-    and (-webkit-device-pixel-ratio: 2){
-/* @media screen and (max-width: 580px) { */
+@media screen and (max-width: 580px) {
     #knowledge-base img {
         width: 350px;
         height: 350px;
@@ -1601,12 +1625,8 @@ small {
         font-size: 30px;
     }
 
-    address {
-        padding-top: 30px;
-    }
-
     address>div {
-        margin-top: 15px;
+        margin-top: 0px;
     }
 
     .card-container__item {
@@ -1627,12 +1647,12 @@ small {
     }
 
     #mobile-app h2,
-    #mobile-app span {
+    #mobile-app h2 span {
         margin-top: 5px;
         font-size: 24px;
     }
 
-    .slick-slide h3 {
+    .slick-slider h3 {
         font-size: 20px;
     }
 
@@ -1642,50 +1662,14 @@ small {
     .card-description {
         font-size: 21px;
     }
-
-    #tariffs ul li,
-    .title-small,
-    form h3,
-    #mobile-app-block__subtitle,
-    .btn.b-Shadow,
-    button.b-Shadow,
-    .slick-slide p.slide-desc {
-        font-size: 17px !important;
-    } 
 }
 
+
 @media screen and (max-width: 400px) {
-    #mobile-app h1 {
-        font-size: 25px;
+    .multiple-items .slick-prev, .multiple-items .slick-next{
+        top: 20%;
     }
-
-    #mobile-app h2,
-    #mobile-app span {
-        margin-top: 5px;
-        font-size: 24px;
-    }
-
-    .slick-slide h3 {
-        font-size: 20px;
-    }
-
-    #h3-include,
-    .title-medium,
-    form h2,
-    .card-description {
-        font-size: 21px;
-    }
-
-    #tariffs ul li,
-    .title-small,
-    form h3,
-    #mobile-app-block__subtitle,
-    .btn.b-Shadow,
-    button.b-Shadow,
-    .slick-slide p.slide-desc {
-        font-size: 17px !important;
-    } 
-
+    
     .title-small {
         margin: 0;
     }
