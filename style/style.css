@@ -1588,12 +1588,6 @@ small {
         font-size: 30px;
     }
 
-    footer p a {
-        /* font-weight: 400; */
-    }
-
-    address p:nth-child(1) {}
-
     address {
         padding-top: 30px;
     }
@@ -1616,7 +1610,7 @@ small {
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 400px) {
     #tariffs ul li {
         font-size: 12px;
     }
@@ -1710,7 +1704,7 @@ small {
 
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 380px) {
     #mobile-app h2 span {
         font-size: 16px;
     }
