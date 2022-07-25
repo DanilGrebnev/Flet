@@ -1573,7 +1573,12 @@ small {
     }
 }
 
-@media screen and (max-width: 580px) {
+/* iphone x, xr, xs, 11, 11 pro */
+@media only screen 
+    and (device-width: 414px) 
+    and (device-height: 896px) 
+    and (-webkit-device-pixel-ratio: 2){
+/* @media screen and (max-width: 580px) { */
     #knowledge-base img {
         width: 350px;
         height: 350px;
