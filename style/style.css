@@ -1647,8 +1647,8 @@ small {
     .btn.b-Shadow,
     button.b-Shadow,
     .slick-slide p.slide-desc {
-        font-size: 17px;
-    }
+        font-size: 17px !important;
+    } 
 
     .title-small {
         margin: 0;
@@ -1789,14 +1789,6 @@ small {
         margin-bottom: 10px;
     }
 
-    form h3 {
-        font-size: 12px;
-    }
-
-    form h2 {
-        font-size: 16px;
-    }
-
     .inp-items {
         margin-top: 0px;
     }
@@ -1812,7 +1804,6 @@ small {
 
     form button {
         margin-top: 41px;
-        font-size: 12px;
     }
 
     #knowledge-base {
