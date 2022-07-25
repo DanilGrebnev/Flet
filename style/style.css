@@ -776,7 +776,7 @@ button.b-Shadow,
 }
 
 .card-description {
-    margin-top: 61px;
+    margin-top: 21px;
     max-width: 380px;
     width: 100%;
     line-height: 1.5;
@@ -785,7 +785,7 @@ button.b-Shadow,
 #h3-include {
     text-align: start;
     margin-top: 93px;
-    margin-bottom: 52px;
+    margin-bottom: 32px;
 }
 
 #tariffs li {
@@ -813,7 +813,7 @@ button.b-Shadow,
 
 /* Футер */
 footer {
-    margin-top: 149px;
+    margin-top: 30px;
     padding-bottom: 44px;
     line-height: 3;
 }
@@ -1676,7 +1676,7 @@ small {
 
     #mobile-app h2,
     #mobile-app span {
-        margin-top: 10px;
+        margin-top: 5px;
         font-size: 19px;
     }
 
@@ -1778,9 +1778,7 @@ small {
         font-size: 22px;
     }
 
-    #mobile-app-block {
-        margin-top: 5px;
-    }
+    
 
     #mobile-app h2 {
         font-size: 16px;
