@@ -977,27 +977,19 @@ small {
     }
 }
 
-@media screen and (max-width: 1202px) {
+
+@media screen and (max-width: 1200px) {
     form .form-footer p {
         min-width: 100%;
     }
-}
-
-@media screen and (max-width: 1200px) {
-    .slide p {
-        /* max-width: 300px; */
-    }
-}
-
-@media screen and (max-width: 1200px) {
-
     #phone {
         margin: 0 auto;
-        width: 400px;
+        max-width: 400px;
+        width: 100%;
         background-size: contain;
         background-position: center;
     }
-
+    
     .align {
         text-align: center;
     }
@@ -1388,8 +1380,8 @@ small {
     }
     .slick-slide img {
         max-width: none;
-        width: 350px;
-        height: 350px;
+        width: 300px;
+        height: 300px;
     }
     .slide p {
         font-size: 16px;
@@ -1496,6 +1488,9 @@ small {
             -ms-flex-direction: column;
                 flex-direction: column;
     }
+    #knowledge-base{
+        margin-top: 30px;
+    }
 
 }
 
@@ -1567,8 +1562,8 @@ small {
         margin: 0px auto;
     }
     .slick-slide img {
-        width: 280px;
-        height: 280px;
+        width: 230px;
+        height: 230px;
     }
     #phone,
     #knowledge-content img {
@@ -1613,15 +1608,17 @@ small {
     #tariffs ul li {
         font-size: 12px;
     }
+   
     .slick-slide img {
-        width: 160px;
-        height: 160px;
+        width: 120px;
+        height: 120px;
     }
     .slick-slide h3 {
         font-size: 15px;
     }
     .slick-slide p{
         font-size: 12px;
+        line-height: normal;
     }
     form {
         padding: 30px;
@@ -1635,7 +1632,10 @@ small {
     .card-description{
         font-size: 16px;
     }
-
+    .card-container__item{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
     #cloudbig {
         -webkit-transform: translate(-50%, -60%);
             -ms-transform: translate(-50%, -60%);
@@ -1649,7 +1649,7 @@ small {
         height: 120px;
         -webkit-transform: translate(20%, -50%);
             -ms-transform: translate(20%, -50%);
-                transform: translate(20%, -50%);
+                transform: translate(50%, -50%);
     }
 
     #phone {
