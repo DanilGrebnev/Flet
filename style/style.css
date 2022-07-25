@@ -1616,6 +1616,37 @@ small {
     #card-wrapper div.item {
         margin-left: 0px;
     }
+
+    #mobile-app h1 {
+        font-size: 25px;
+    }
+
+    #mobile-app h2,
+    #mobile-app span {
+        margin-top: 5px;
+        font-size: 24px;
+    }
+
+    .slick-slide h3 {
+        font-size: 20px;
+    }
+
+    #h3-include,
+    .title-medium,
+    form h2,
+    .card-description {
+        font-size: 21px;
+    }
+
+    #tariffs ul li,
+    .title-small,
+    form h3,
+    #mobile-app-block__subtitle,
+    .btn.b-Shadow,
+    button.b-Shadow,
+    .slick-slide p.slide-desc {
+        font-size: 17px !important;
+    } 
 }
 
 @media screen and (max-width: 400px) {
