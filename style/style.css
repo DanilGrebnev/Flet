@@ -113,7 +113,7 @@ body {
     font-weight: bold;
 }
 
-.slick-slide p {
+.slick-slide p.slide-desc {
     display: block;
     margin: 0 auto;
     font-size: 18px;
@@ -989,7 +989,7 @@ small {
 
 
 @media screen and (max-width: 1200px) {
-    .slick-slide p {
+    .slick-slide p.slide-desc {
         line-height: 1.5;
     }
     form .form-footer p {
@@ -1395,7 +1395,7 @@ small {
     .slick-slide h3 {
         min-height: auto;
     }
-    .slick-slide p {
+    .slick-slide p.slide-desc {
         font-size: 16px;
         width: 100%;
         max-width: none;
@@ -1527,8 +1527,8 @@ small {
         text-align: start;
     }
 
-    .slick-slide p {
-        text-align: justify;
+    .slick-slide p.slide-desc {
+        text-align: start;
     }
 
     .title-medium,
@@ -1629,7 +1629,7 @@ small {
     .slick-slide h3 {
         font-size: 15px;
     }
-    .slick-slide p{
+    .slick-slide p.slide-desc{
         font-size: 12px;
     }
     form {
