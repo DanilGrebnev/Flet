@@ -1729,7 +1729,6 @@ small {
     #mobile-app #btn-sub-img {
         margin: 0 auto;
         text-align: center;
-        padding: 9px;
     }
 
     #main-wrapper {
@@ -1822,8 +1821,8 @@ small {
 
     #knowledge-base p {
         margin-top: 20px;
-        margin-bottom: 20px;
-        font-size: 12px;
+        text-align: start;
+        word-wrap: break-word;
     }
 
     #knowledge-base img {
